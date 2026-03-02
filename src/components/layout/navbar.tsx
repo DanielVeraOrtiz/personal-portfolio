@@ -44,9 +44,19 @@ export default function Navbar() {
         <motion.a
           href="#contact"
           initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.5 }}
-          whileHover={{ scale: 1.025 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            transition: {
+              delay: 0.5,
+              duration: 0.4,
+            },
+          }}
+          whileHover={{
+            scale: 1.025,
+            boxShadow: '0 5px 10px 0 rgba(255, 0, 0, 0.5)',
+            transition: { duration: 0.15 },
+          }}
         >
           Trabajemos Juntos
         </motion.a>

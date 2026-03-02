@@ -61,12 +61,7 @@
   background: linear-gradient(45deg, #da2f2f, #a0020d);
   padding: 0.6rem 1.25rem;
   border-radius: 10px;
-  transition: 0.2s ease-in-out;
   cursor: pointer;
   display: block;
   overflow: hidden;
-}
-
-.btn-work-together > a:hover {
-  box-shadow: 0 5px 10px 0 rgba(255, 0, 0, 0.5);
 }
