@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function Navbar() {
   const navLinks = [
-    { label: 'Inicio', href: '#' },
+    { label: 'Inicio', href: '#hero' },
     { label: 'Sobre Mí', href: '#about' },
     { label: 'Habilidades', href: '#skills' },
     { label: 'Proyectos', href: '#projects' },
@@ -47,10 +47,7 @@ export default function Navbar() {
           animate={{
             opacity: 1,
             scale: 1,
-            transition: {
-              delay: 0.5,
-              duration: 0.4,
-            },
+            transition: { delay: 0.5, duration: 0.4 },
           }}
           whileHover={{
             scale: 1.025,
