@@ -92,7 +92,8 @@
   top: 2rem;
   padding-top: 1rem;
   color: #f51624;
-  font-size: 2.25rem;
+  font-size: 1.8rem;
+  display: block;
 }
 
 /* Si no usara motion cuando se montan los componentes, entonces la flecha debia animarla con keyframe,
