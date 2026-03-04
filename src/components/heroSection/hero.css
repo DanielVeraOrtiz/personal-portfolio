@@ -1,0 +1,125 @@
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1rem;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.gradient-border {
+  padding: 5px;
+  background: linear-gradient(45deg, #f55f5f, #f51624);
+  border-radius: 50%;
+  position: relative;
+  z-index: 999;
+}
+
+.logo-hero {
+  border-radius: 50%;
+  padding: 1rem;
+  width: 150px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  background-color: #111111;
+}
+
+.descriptions-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+
+.descriptions-hero-name {
+  font-size: 6rem;
+  font-weight: bolder;
+  background: linear-gradient(45deg, #f55f5f, #f51624);
+  font-weight: 500;
+  background-clip: text;
+  color: transparent;
+}
+
+.descriptions-hero-work {
+  font-size: 1.5rem;
+  color: #a3a3a3;
+}
+
+.descriptions-hero-description {
+  width: 55%;
+  font-size: 1.08rem;
+  font-weight: lighter;
+  color: #a3a3a3;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+}
+
+.social-links-hero {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 999;
+}
+
+.social-links-hero > a {
+  border: 1px solid #750000;
+  border-radius: 50%;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  background-color: #111111;
+  color: #f5f5f5;
+  transition: 0.3s ease-in-out;
+}
+
+.social-links-hero > a:hover {
+  background-color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.social-link-icon {
+  transition: 0.3s ease-in-out;
+}
+
+.social-links-hero > a:hover .social-link-icon {
+  transform: scale(1.1);
+}
+
+.next-section-hero {
+  position: relative;
+  top: 2rem;
+  padding-top: 1rem;
+  color: #f51624;
+  font-size: 1.8rem;
+  display: block;
+  z-index: 999;
+}
+
+/* Si no usara motion cuando se montan los componentes, entonces la flecha debia animarla con keyframe,
+ debido a que de este modo podia mantener el componente de tipo server
+
+.next-section-hero {
+  animation: bounceArrow 2s ease-in-out infinite;
+}
+
+@keyframes bounceArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+*/

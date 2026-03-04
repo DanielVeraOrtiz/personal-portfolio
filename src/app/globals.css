@@ -1,8 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: rgba(10, 10, 10);
+  box-sizing: border-box;
 }
 
 @theme inline {
@@ -14,8 +15,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: rgba(10, 10, 10);
     --foreground: #ededed;
+    box-sizing: border-box;
   }
 }
 
