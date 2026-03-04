@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+// Propio de next para los archivos en head
 export const metadata: Metadata = {
   title: 'Portafolio DV',
   description: 'Portafolio para trabajados de Daniel Vera (Desarrollador full-stack)',

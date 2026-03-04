@@ -15,6 +15,7 @@
   );
   filter: blur(12px);
   animation: bounceFire linear infinite;
+  /* "avisa" que el elemento cambiara pronto esas propiedades */
   will-change: transform, opacity;
 }
 

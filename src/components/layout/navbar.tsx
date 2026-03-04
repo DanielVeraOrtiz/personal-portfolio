@@ -1,9 +1,15 @@
+// Por motion debo hacer un componente de uso de cliente, si usara solo animaciones con css no debo.
+// pero estados con react, estados en window y demas necesitan que sea use client.
 'use client';
 
 import './navbar.css';
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
+  // En lugar de repetir en el html, mejor un map
+  // Typescript en general a datos de fuentes externas, props, variables limitadas a ciertos estados y
+  // estados complejos. Solo asi, debido a que typescript infiere bien muchos tipos. Por ejemplo:
+  // el tipo de abajo lo infiere bien.
   const navLinks = [
     { label: 'Inicio', href: '#hero' },
     { label: 'Sobre Mí', href: '#about' },
@@ -13,6 +19,8 @@ export default function Navbar() {
   ];
 
   return (
+    // la navbar siempre esta en el viewport por ello en motion debo usar animate en lugar de whileInView para todo
+    // lo que ya este en pantalla al iniciar. En caso contrario whileInView y viewport con once true o false.
     <motion.header
       className="navbar"
       initial={{ y: -100 }}
@@ -41,6 +49,7 @@ export default function Navbar() {
       </ul>
 
       <div className="btn-work-together">
+        {/* Ojo que motion es inline css, entonces sus scale sobrescribiran mis scale por ejemplo */}
         <motion.a
           href="#contact"
           initial={{ opacity: 0, scale: 0.9 }}

@@ -8,6 +8,9 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { FaRegUser } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { FaArrowDownLong } from 'react-icons/fa6';
+
+// Desacticar el server side rendering para las particulas, esto lo refactorice haciando particulas un componente
+// para no desactivar el ssr en todo Hero, que afecta SEO y demas.
 const Particles = dynamic(() => import('./particles'), {
   ssr: false,
 });
