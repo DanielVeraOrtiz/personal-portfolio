@@ -1,4 +1,8 @@
-import Hero from '@/components/heroSection/hero';
+'use client';
+import dynamic from 'next/dynamic';
+const Hero = dynamic(() => import('@/components/heroSection/hero'), {
+  ssr: false,
+});
 
 export default function Home() {
   return (

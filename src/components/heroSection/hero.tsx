@@ -7,10 +7,29 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { FaRegUser } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { FaArrowDownLong } from 'react-icons/fa6';
+import { useState } from 'react';
 
 export default function Hero() {
+  const [particles] = useState(() =>
+    [...Array(25)].map(() => ({
+      left: Math.random() * 100,
+      delay: Math.random() * 15,
+      duration: Math.random() * 8 + 6,
+    })),
+  );
   return (
     <section id="hero" className="hero-section">
+      {particles.map((particle, i) => (
+        <div
+          key={`particle-${i}`}
+          className="fire-ball"
+          style={{
+            left: `${particle.left}%`,
+            animationDelay: `${particle.delay}s`,
+            animationDuration: `${particle.duration}s`,
+          }}
+        ></div>
+      ))}
       <motion.div
         className="gradient-border"
         initial={{ opacity: 0.4, scale: 0 }}
