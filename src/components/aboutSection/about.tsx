@@ -1,13 +1,29 @@
+'use client';
+
 import './about.css';
+import { motion } from 'framer-motion';
 
 export default function About() {
   return (
     <section id="about" aria-labelledby="about-title" className="about-section">
-      <h2 id="about-title" className="about-title-section">
+      <motion.h2
+        id="about-title"
+        className="about-title-section"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.1, duration: 0.8 }}
+      >
         Sobre <span>Mí</span>
-      </h2>
+      </motion.h2>
       <div className="about-container">
-        <div className="about-description">
+        <motion.div
+          className="about-description"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
           <p>
             Soy un desarrollador apasionado con más de X años de experiencia en el desarrollo de
             aplicaciones web modernas. Me especializo en crear soluciones innovadoras que combinan
@@ -23,8 +39,14 @@ export default function About() {
             Cuando no estoy programando, me encontrarás aprendiendo nuevas tecnologías,
             contribuyendo a proyectos open source o compartiendo conocimientos con la comunidad.
           </p>
-        </div>
-        <div className="about-data">
+        </motion.div>
+        <motion.div
+          className="about-data"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
           <div className="about-container-data">
             <p>
               Años de Experiencia Laboral<strong>0</strong>
@@ -40,7 +62,7 @@ export default function About() {
               Motivación por Aprender y Trabajar<strong>∞</strong>
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
