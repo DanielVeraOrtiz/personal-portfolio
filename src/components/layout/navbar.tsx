@@ -22,20 +22,23 @@ export default function Navbar() {
     // la navbar siempre esta en el viewport por ello en motion debo usar animate en lugar de whileInView para todo
     // lo que ya este en pantalla al iniciar. En caso contrario whileInView y viewport con once true o false.
     <motion.header
-      className="navbar"
+      className="navbar fixed top-0 left-0 w-full h-[10vh] flex justify-between items-center p-8 z-1"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
     >
-      <div className="logo">
+      <div className="logo text-2xl hover:scale-105 hover:cursor-pointer transition-transform duration-200 ease-in-out">
         <span>{'<'}</span>
         Portfolio
         <span>{'/>'}</span>
       </div>
 
-      <ul className="section-anchors">
+      <ul className="section-anchors flex gap-4">
         {navLinks.map((link, index) => (
-          <li key={link.label}>
+          <li
+            key={link.label}
+            className="transition-colors duration-200 ease-in-out relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+          >
             <motion.a
               href={link.href}
               initial={{ opacity: 0, y: -20 }}
@@ -51,6 +54,7 @@ export default function Navbar() {
       <div className="btn-work-together">
         {/* Ojo que motion es inline css, entonces sus scale sobrescribiran mis scale por ejemplo */}
         <motion.a
+          className="py-2.5 px-5 cursor-pointer block overflow-hidden rounded-xl"
           href="#contact"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{
@@ -59,7 +63,7 @@ export default function Navbar() {
             transition: { delay: 0.5, duration: 0.4 },
           }}
           whileHover={{
-            scale: 1.025,
+            scale: 1.05,
             boxShadow: '0 5px 10px 0 rgba(255, 0, 0, 0.5)',
             transition: { duration: 0.15 },
           }}
