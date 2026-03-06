@@ -20,7 +20,7 @@ export default function Particles({ quantity }: { quantity: number }) {
       {particles.map((particle, i) => (
         <div
           key={`particle-${i}`}
-          className="fire-ball"
+          className="fire-ball absolute w-12.5 aspect-square bottom-0 rounded-full pointer-events-none z-1 blur-md"
           style={{
             left: `${particle.left}%`,
             animationDelay: `${particle.delay}s`,

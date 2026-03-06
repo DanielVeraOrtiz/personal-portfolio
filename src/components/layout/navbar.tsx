@@ -63,7 +63,7 @@ export default function Navbar() {
             transition: { delay: 0.5, duration: 0.4 },
           }}
           whileHover={{
-            scale: 1.025,
+            scale: 1.05,
             boxShadow: '0 5px 10px 0 rgba(255, 0, 0, 0.5)',
             transition: { duration: 0.15 },
           }}
