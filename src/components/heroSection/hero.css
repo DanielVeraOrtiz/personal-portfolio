@@ -1,0 +1,59 @@
+@reference "tailwindcss";
+
+.gradient-border {
+  background: linear-gradient(45deg, #f55f5f, #f51624);
+}
+
+.logo-hero {
+  background-color: #111111;
+}
+
+.descriptions-hero-name {
+  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background-clip: text;
+}
+
+.descriptions-hero-work {
+  color: #a3a3a3;
+}
+
+.descriptions-hero-description {
+  color: #a3a3a3;
+}
+
+.social-link {
+  @apply rounded-full p-[0.8rem] text-2xl transition-colors duration-300 ease-in-out;
+  background-color: #111111;
+  color: #f5f5f5;
+  transition:
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+  border: 1px solid #750000;
+}
+
+.social-link:hover {
+  background-color: #ef4444;
+  border-color: #ef4444;
+}
+
+.next-section-hero {
+  color: #f51624;
+}
+
+/* Si no usara motion cuando se montan los componentes, entonces la flecha debia animarla con keyframe,
+ debido a que de este modo podia mantener el componente de tipo server
+
+.next-section-hero {
+  animation: bounceArrow 2s ease-in-out infinite;
+}
+
+@keyframes bounceArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+*/
