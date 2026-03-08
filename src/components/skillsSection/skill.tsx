@@ -1,32 +1,30 @@
 import './skill.css';
-import { FaLocationArrow } from 'react-icons/fa';
+import { IoCodeSlash } from 'react-icons/io5';
+import { GoDatabase } from 'react-icons/go';
+import { GrTest } from 'react-icons/gr';
+import { AiOutlineDatabase } from 'react-icons/ai';
 
 export default function Skills() {
   const skills = [
     {
       skillName: 'Desarrollo frontend',
-      skillTech: ['React', 'Next.js', 'Typescript', 'Vue.js'],
-      icon: FaLocationArrow,
+      skillTech: ['React', 'Next.js', 'Ruby on Rails', 'Typescript'],
+      icon: IoCodeSlash,
     },
     {
-      skillName: 'Desarrollo frontend',
-      skillTech: ['React', 'Next.js', 'Typescript', 'Vue.js'],
-      icon: FaLocationArrow,
+      skillName: 'Desarrollo backend',
+      skillTech: ['Ruby on Rails', 'Koa', 'Node', 'Javascript'],
+      icon: AiOutlineDatabase,
     },
     {
-      skillName: 'Desarrollo frontend',
-      skillTech: ['React', 'Next.js', 'Typescript', 'Vue.js'],
-      icon: FaLocationArrow,
+      skillName: 'Bases de datos',
+      skillTech: ['PostgreSQL'],
+      icon: GoDatabase,
     },
     {
-      skillName: 'Desarrollo frontend',
-      skillTech: ['React', 'Next.js', 'Typescript', 'Vue.js'],
-      icon: FaLocationArrow,
-    },
-    {
-      skillName: 'Desarrollo frontend',
-      skillTech: ['React', 'Next.js', 'Typescript', 'Vue.js'],
-      icon: FaLocationArrow,
+      skillName: 'Testing',
+      skillTech: ['Jest', 'Supertest', 'Playwright'],
+      icon: GrTest,
     },
   ];
 
@@ -49,14 +47,16 @@ export default function Skills() {
           return (
             <article
               key={index}
-              className="skill-container flex w-3/10 flex-col p-8 rounded-3xl text-center items-center"
+              className="skill-container flex w-3/10 flex-col p-8 rounded-3xl text-center items-center hover:scale-500 transition-all duration-300 ease-in-out"
             >
-              <div className="skill-icon-border rounded-2xl bg-amber-500 mb-4 p-0.5">
+              <div className="skill-icon-border rounded-2xl mb-4 p-0.5">
                 <div className="skill-icon p-4 rounded-2xl h-16 w-16 flex justify-center items-center">
                   <Icon aria-hidden="true" className="h-8 w-8" />
                 </div>
               </div>
-              <h3 className="skill-title text-xl mb-2">{skill.skillName}</h3>
+              <h3 className="skill-title text-xl mb-2 transition-colors duration-300 ease-in-out">
+                {skill.skillName}
+              </h3>
               <p className="skill-tech">{tech}</p>
             </article>
           );
