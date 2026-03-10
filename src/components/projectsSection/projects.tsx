@@ -15,7 +15,7 @@ export default function Projects() {
       <p className="projects-subtitle text-lg mb-12">
         Todos los proyectos universitarios/personales en los que he trabajado
       </p>
-      <div className="flex flex-wrap gap-8 w-4/5 justify-center">
+      <div className="flex flex-wrap gap-8 w-3/4 justify-center">
         {projects.map((project, index) => (
           <ProjectCard
             key={`${index}-${project.name}`}
