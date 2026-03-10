@@ -58,6 +58,10 @@
   border-color: #ee4343;
 }
 
-.page-index {
+.page-index-active {
   background: linear-gradient(45deg, #f55f5f, #f51624);
+}
+
+.page-index-deactivated {
+  background-color: #b8b6b6;
 }

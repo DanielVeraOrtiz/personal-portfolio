@@ -98,4 +98,17 @@ export const skillTools = [
     toolSkill: 'Intermedio',
     toolSkillClass: 'intermediate',
   },
+  {
+    toolName: 'Jest + Supertest',
+    toolIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
+    toolSkill: 'Intermedio',
+    toolSkillClass: 'intermediate',
+  },
+  {
+    toolName: 'Playwright',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg',
+    toolSkill: 'básico',
+    toolSkillClass: 'basic',
+  },
 ];

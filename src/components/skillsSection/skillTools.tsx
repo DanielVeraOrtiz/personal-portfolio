@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { FaChevronRight } from 'react-icons/fa';
 import { FaChevronLeft } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 export default function SkillTools() {
   const [index, setIndex] = useState(0);
@@ -32,23 +33,36 @@ export default function SkillTools() {
       className="h-screen w-full flex justify-center items-center flex-col"
       aria-labelledby="skill-tools-frameworks"
     >
-      <h2
+      <motion.h2
         id="skill-tools-frameworks"
         className="skill-frameworks-title text-[4.5rem] font-semibold"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.1, duration: 0.8 }}
       >
         Lenguajes & <span className="text-transparent">Tecnologías</span>
-      </h2>
-      <p className="skill-frameworks-subtitle text-lg mb-12">
+      </motion.h2>
+      <motion.p
+        className="skill-frameworks-subtitle text-lg mb-12"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+      >
         Mis habilidades desglosadas en diferentes lenguajes y frameworks
-      </p>
+      </motion.p>
       <div className="flex flex-wrap gap-8 w-3/4 justify-center mb-8">
         {visibleTools.map((skillTool, index) => {
           return (
-            <article
+            <motion.article
               key={index}
               className="skill-tool-container flex-1 min-w-1/5 max-w-1/4 rounded-3xl flex flex-col items-center p-8 hover:scale-105 transition-all duration-300 ease-in-out"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.5 + index * 0.1, duration: 0.8 }}
             >
-              <img
+              <Image
                 className="skill-tool-icon mb-2"
                 src={skillTool.toolIcon}
                 alt={skillTool.toolName}
@@ -61,11 +75,17 @@ export default function SkillTools() {
               <p className={`${skillTool.toolSkillClass} rounded-full px-4 py-1 text-sm`}>
                 {skillTool.toolSkill}
               </p>
-            </article>
+            </motion.article>
           );
         })}
       </div>
-      <div className="flex gap-8 text-xl">
+      <motion.div
+        className="flex gap-8 text-xl"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 1.4, duration: 0.8 }}
+      >
         <button
           onClick={prev}
           aria-label="Previous tools skills"
@@ -81,7 +101,7 @@ export default function SkillTools() {
               <div
                 key={i}
                 className={`transition-all duration-300 ease-in-out rounded-full
-          ${active ? 'w-8 h-2 page-index' : 'w-2 h-2 bg-gray-400'}`}
+          ${active ? 'w-8 h-2 page-index-active' : 'w-2 h-2 page-index-deactivated'}`}
               />
             );
           })}
@@ -93,7 +113,7 @@ export default function SkillTools() {
         >
           <FaChevronRight aria-hidden="true" />
         </button>
-      </div>
+      </motion.div>
     </section>
   );
 }
