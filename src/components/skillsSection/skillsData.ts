@@ -1,3 +1,31 @@
+import { IoCodeSlash } from 'react-icons/io5';
+import { GoDatabase } from 'react-icons/go';
+import { GrTest } from 'react-icons/gr';
+import { AiOutlineDatabase } from 'react-icons/ai';
+
+export const skills = [
+  {
+    skillName: 'Desarrollo frontend',
+    skillTech: ['React', 'Next.js', 'Ruby on Rails', 'Typescript'],
+    icon: IoCodeSlash,
+  },
+  {
+    skillName: 'Desarrollo backend',
+    skillTech: ['Ruby on Rails', 'Koa', 'Node', 'Javascript'],
+    icon: AiOutlineDatabase,
+  },
+  {
+    skillName: 'Bases de datos',
+    skillTech: ['PostgreSQL'],
+    icon: GoDatabase,
+  },
+  {
+    skillName: 'Testing',
+    skillTech: ['Jest', 'Supertest', 'Playwright'],
+    icon: GrTest,
+  },
+];
+
 export const skillTools = [
   {
     toolName: 'HTML',

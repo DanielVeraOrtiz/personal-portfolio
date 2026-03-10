@@ -1,41 +1,15 @@
 'use client';
 
 import './skill.css';
-import { IoCodeSlash } from 'react-icons/io5';
-import { GoDatabase } from 'react-icons/go';
-import { GrTest } from 'react-icons/gr';
-import { AiOutlineDatabase } from 'react-icons/ai';
+import { skills } from './skillsData';
 import { motion } from 'framer-motion';
 
 export default function Skills() {
-  const skills = [
-    {
-      skillName: 'Desarrollo frontend',
-      skillTech: ['React', 'Next.js', 'Ruby on Rails', 'Typescript'],
-      icon: IoCodeSlash,
-    },
-    {
-      skillName: 'Desarrollo backend',
-      skillTech: ['Ruby on Rails', 'Koa', 'Node', 'Javascript'],
-      icon: AiOutlineDatabase,
-    },
-    {
-      skillName: 'Bases de datos',
-      skillTech: ['PostgreSQL'],
-      icon: GoDatabase,
-    },
-    {
-      skillName: 'Testing',
-      skillTech: ['Jest', 'Supertest', 'Playwright'],
-      icon: GrTest,
-    },
-  ];
-
   return (
     <section
       id="skills"
       aria-labelledby="skills-title"
-      className="w-full h-screen flex justify-center items-center flex-col"
+      className="h-screen w-full flex justify-center items-center flex-col"
     >
       <motion.h2
         className="skill-title-section text-[4.5rem] font-semibold"
