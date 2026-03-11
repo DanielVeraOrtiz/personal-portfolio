@@ -1,0 +1,26 @@
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-container {
+  background-color: #111111;
+  border: 1px solid #750000;
+}
+
+.modal-title {
+  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background-clip: text;
+}
+
+.modal-description {
+  color: #a4a2a2;
+}
+
+.deploy-link {
+  background: linear-gradient(45deg, #da2f2f, #a0020d);
+}
+
+.github-link {
+  background-color: #1a1a1a;
+  border: 1px solid #750000;
+}
