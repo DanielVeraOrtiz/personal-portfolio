@@ -86,6 +86,7 @@ export default function SkillTools() {
           <motion.article
             key={`${i}-${skillTool.toolName}`}
             variants={item}
+            transition={{ duration: 0.8 }}
             className="skill-tool-container relative flex-1 min-w-1/5 max-w-1/4 rounded-3xl flex flex-col items-center p-8 hover:scale-105 transition-all duration-300 ease-in-out"
           >
             <Image

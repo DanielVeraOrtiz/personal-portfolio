@@ -24,3 +24,65 @@
   background-color: #1a1a1a;
   border: 1px solid #750000;
 }
+
+.other-resolution-title {
+  opacity: 0.35;
+  color: #d1d1d1;
+}
+
+.other-resolution:hover > .other-resolution-title {
+  opacity: 1;
+}
+
+.other-resolution-btn {
+  color: #d1d1d1;
+  opacity: 0.35;
+  background-color: #111111;
+  color: #f5f5f5;
+  border: 1px solid #750000;
+  cursor: pointer;
+}
+
+.other-resolution-btn:hover {
+  background-color: #ef4444;
+  border-color: #ef4444;
+}
+
+.other-resolution:hover .other-resolution-btn {
+  opacity: 1;
+}
+
+.other-resolution-btn-selected {
+  color: #d1d1d1;
+  opacity: 0.35;
+  background: linear-gradient(45deg, #721919, #4b0106);
+  color: #f5f5f5;
+  border: 1px solid #ef4444;
+}
+
+.other-resolution:hover .other-resolution-btn-selected {
+  opacity: 1;
+}
+
+.carrusel-btn-change {
+  background-color: #111111;
+  border: 1px solid #750000;
+  color: #a4a2a2;
+  opacity: 0.35;
+}
+
+.carrusel:hover .carrusel-btn-change {
+  opacity: 1;
+}
+
+.carrusel-btn-change:hover {
+  border-color: #ee4343;
+}
+
+.image-index-active {
+  background: linear-gradient(45deg, #f55f5f, #f51624);
+}
+
+.image-index-deactivated {
+  background-color: #b8b6b6;
+}

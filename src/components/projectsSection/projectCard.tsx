@@ -5,6 +5,7 @@ import { useState, useCallback } from 'react';
 // Me ayuda a montar el modal directamente en el div
 import { createPortal } from 'react-dom';
 import ProjectModal from './projectModal';
+import { motion } from 'framer-motion';
 
 interface ProjectCardProps {
   name: string;
@@ -13,7 +14,9 @@ interface ProjectCardProps {
   linkDeploy: string;
   linkGitHubBackend: string;
   linkGitHubFrontend: string;
-  images: string[];
+  imagesComputer: string[];
+  imagesPhone: string[];
+  imagesTablet: string[];
 }
 
 export default function ProjectCard({
@@ -23,8 +26,15 @@ export default function ProjectCard({
   linkDeploy,
   linkGitHubBackend,
   linkGitHubFrontend,
-  images,
+  imagesComputer,
+  imagesPhone,
+  imagesTablet,
 }: ProjectCardProps) {
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   const [open, setOpen] = useState(false);
 
   const openModal = useCallback(() => {
@@ -48,19 +58,23 @@ export default function ProjectCard({
             linkDeploy={linkDeploy}
             linkGitHubBackend={linkGitHubBackend}
             linkGitHubFrontend={linkGitHubFrontend}
-            images={images}
+            imagesComputer={imagesComputer}
+            imagesPhone={imagesPhone}
+            imagesTablet={imagesTablet}
           />,
           document.body,
         )}
-      <button
+      <motion.button
         onClick={openModal}
-        className="card-container relative cursor-pointer flex-1 min-w-1/5 rounded-2xl group transition-all duration-300 ease-in-out overflow-hidden text-left"
+        className="card-container relative cursor-pointer rounded-2xl group transition-all duration-300 ease-in-out overflow-hidden text-left"
+        variants={item}
+        transition={{ duration: 0.8 }}
       >
-        <article>
+        <article className="flex flex-col h-full justify-start">
           <div className="w-full aspect-video overflow-hidden group-hover:brightness-40 transition-all duration-300 ease-in-out">
             <img
               className="w-full aspect-video object-cover rounded-tl-2xl rounded-tr-2xl group-hover:scale-110 transition-transform duration-300 ease-in-out"
-              src={images[0]}
+              src={imagesComputer[0]}
               alt={`Images from project called ${name}`}
             />
           </div>
@@ -81,7 +95,7 @@ export default function ProjectCard({
             </div>
           </div>
         </article>
-      </button>
+      </motion.button>
     </>
   );
 }
