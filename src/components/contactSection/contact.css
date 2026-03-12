@@ -1,0 +1,8 @@
+.contact-title {
+  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background-clip: text;
+}
+
+.contact-subtitle {
+  color: #a4a2a2;
+}
