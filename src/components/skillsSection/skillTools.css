@@ -1,0 +1,67 @@
+.skill-frameworks-title {
+  color: #dfdedf;
+}
+
+.skill-frameworks-title > span {
+  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background-clip: text;
+}
+
+.skill-frameworks-subtitle {
+  color: #a4a2a2;
+}
+
+.skill-tool-container {
+  background-color: #111111;
+  border: 1px solid #750000;
+  box-shadow: 0 0 20px 0 #330101;
+}
+
+.skill-tool-container:hover {
+  background-color: #1c1313;
+  border-color: #ee4343;
+}
+
+.skill-tool-title {
+  color: #f5f5f5;
+}
+
+.skill-tool-container:hover .skill-tool-title {
+  color: #ee4343;
+}
+
+.intermediate {
+  background-color: #29190f;
+  border: 1px solid #9c490e;
+  color: #b45410;
+}
+
+.advanced {
+  background-color: #271616;
+  border: 1px solid #c73939;
+  color: #ef4444;
+}
+
+.basic {
+  background-color: #23270f;
+  border: 1px solid #4f5e0b;
+  color: #4a700d;
+}
+
+.btn-change {
+  background-color: #111111;
+  border: 1px solid #750000;
+  color: #a4a2a2;
+}
+
+.btn-change:hover {
+  border-color: #ee4343;
+}
+
+.page-index-active {
+  background: linear-gradient(45deg, #f55f5f, #f51624);
+}
+
+.page-index-deactivated {
+  background-color: #b8b6b6;
+}
