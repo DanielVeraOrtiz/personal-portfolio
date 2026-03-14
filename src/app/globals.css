@@ -50,6 +50,9 @@
     --bg-skill-tag-basic: #23270f;
     --bg-skill-index-deactivated: #b8b6b6;
 
+    --bg-modal-backdrop: rgba(0, 0, 0, 0.8);
+    --bg-btn-github: #1a1a1a;
+
     /* ================= BORDERS ================= */
 
     --borders-color: #750000;
@@ -76,6 +79,8 @@
       transparent 80%
     );
     --skill-icon-gradient: linear-gradient(45deg, #750000, #f51624);
+    --bg-modal-selected-resolution: linear-gradient(45deg, #721919, #4b0106);
+
     box-sizing: border-box;
   }
 }

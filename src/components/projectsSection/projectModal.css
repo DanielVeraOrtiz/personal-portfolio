@@ -1,33 +1,33 @@
 .modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--bg-modal-backdrop);
 }
 
 .modal-container {
-  background-color: #111111;
-  border: 1px solid #750000;
+  background-color: var(--bg-containers);
+  border: 1px solid var(--borders-color);
 }
 
 .modal-title {
-  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background: var(--bg-gradient-titles);
   background-clip: text;
 }
 
 .modal-description {
-  color: #a4a2a2;
+  color: var(--text-color-base-text-secondary);
 }
 
 .deploy-link {
-  background: linear-gradient(45deg, #da2f2f, #a0020d);
+  background: var(--bg-btns-primary);
 }
 
 .github-link {
-  background-color: #1a1a1a;
-  border: 1px solid #750000;
+  background-color: var(--bg-btn-github);
+  border: 1px solid var(--borders-color);
 }
 
 .other-resolution-title {
   opacity: 0.35;
-  color: #d1d1d1;
+  color: var(--text-color-titles);
 }
 
 .other-resolution:hover > .other-resolution-title {
@@ -35,17 +35,16 @@
 }
 
 .other-resolution-btn {
-  color: #d1d1d1;
+  color: var(--text-color-base-text);
   opacity: 0.35;
-  background-color: #111111;
-  color: #f5f5f5;
-  border: 1px solid #750000;
+  background-color: var(--bg-containers);
+  border: 1px solid var(--borders-color);
   cursor: pointer;
 }
 
 .other-resolution-btn:hover {
-  background-color: #ef4444;
-  border-color: #ef4444;
+  background-color: var(--bg-hero-anchors-hover);
+  border-color: var(--borders-color-hover);
 }
 
 .other-resolution:hover .other-resolution-btn {
@@ -53,11 +52,10 @@
 }
 
 .other-resolution-btn-selected {
-  color: #d1d1d1;
+  color: var(--text-color-base-text);
   opacity: 0.35;
-  background: linear-gradient(45deg, #721919, #4b0106);
-  color: #f5f5f5;
-  border: 1px solid #ef4444;
+  background: var(--bg-modal-selected-resolution);
+  border: 1px solid var(--borders-color-hover);
 }
 
 .other-resolution:hover .other-resolution-btn-selected {
@@ -65,9 +63,9 @@
 }
 
 .carrusel-btn-change {
-  background-color: #111111;
-  border: 1px solid #750000;
-  color: #a4a2a2;
+  background-color: var(--bg-containers);
+  border: 1px solid var(--borders-color);
+  color: var(--text-color-base-text-secondary);
   opacity: 0.35;
 }
 
@@ -76,13 +74,13 @@
 }
 
 .carrusel-btn-change:hover {
-  border-color: #ee4343;
+  border-color: var(--borders-color-hover);
 }
 
 .image-index-active {
-  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background: var(--bg-gradient-titles);
 }
 
 .image-index-deactivated {
-  background-color: #b8b6b6;
+  background-color: var(--bg-skill-index-deactivated);
 }
