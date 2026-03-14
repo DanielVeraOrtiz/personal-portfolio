@@ -1,67 +1,67 @@
 .skill-frameworks-title {
-  color: #dfdedf;
+  color: var(--text-color-titles);
 }
 
 .skill-frameworks-title > span {
-  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background: var(--bg-gradient-titles);
   background-clip: text;
 }
 
 .skill-frameworks-subtitle {
-  color: #a4a2a2;
+  color: var(--text-color-subtitles);
 }
 
 .skill-tool-container {
-  background-color: #111111;
-  border: 1px solid #750000;
-  box-shadow: 0 0 20px 0 #330101;
+  background-color: var(--bg-containers);
+  border: 1px solid var(--borders-color);
+  box-shadow: 0 0 20px 0 var(--boxes-shadow-color);
 }
 
 .skill-tool-container:hover {
-  background-color: #1c1313;
-  border-color: #ee4343;
+  background-color: var(--bg-skill-container-hover);
+  border-color: var(--borders-color-hover);
 }
 
 .skill-tool-title {
-  color: #f5f5f5;
+  color: var(--text-logo-color-primary);
 }
 
 .skill-tool-container:hover .skill-tool-title {
-  color: #ee4343;
+  color: var(--text-hover);
 }
 
 .intermediate {
-  background-color: #29190f;
-  border: 1px solid #9c490e;
-  color: #b45410;
+  background-color: var(--bg-skill-tag-intermediate);
+  border: 1px solid var(--border-skill-tag-intermediate);
+  color: var(--text-skill-tag-intermediate);
 }
 
 .advanced {
-  background-color: #271616;
-  border: 1px solid #c73939;
-  color: #ef4444;
+  background-color: var(--bg-skill-tag-advanced);
+  border: 1px solid var(--border-skill-tag-advanced);
+  color: var(--text-skill-tag-advanced);
 }
 
 .basic {
-  background-color: #23270f;
-  border: 1px solid #4f5e0b;
-  color: #4a700d;
+  background-color: var(--bg-skill-tag-basic);
+  border: 1px solid var(--bg-skill-tag-basic);
+  color: var(--text-skill-tag-basic);
 }
 
 .btn-change {
-  background-color: #111111;
-  border: 1px solid #750000;
-  color: #a4a2a2;
+  background-color: var(--bg-containers);
+  border: 1px solid var(--borders-color);
+  color: var(--text-color-base-text-secondary);
 }
 
 .btn-change:hover {
-  border-color: #ee4343;
+  border-color: var(--borders-color-hover);
 }
 
 .page-index-active {
-  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background: var(--bg-gradient-titles);
 }
 
 .page-index-deactivated {
-  background-color: #b8b6b6;
+  background-color: var(--bg-skill-index-deactivated);
 }
