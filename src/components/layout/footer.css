@@ -1,0 +1,51 @@
+.footer {
+  border-top: 1px solid #750000;
+  background-color: #0d0d0d;
+}
+
+.logo-footer {
+  color: #f5f5f5;
+}
+
+.logo-footer > span {
+  color: #ef4444;
+}
+
+.message-footer {
+  color: #c6c6c6;
+}
+
+.footer-subtitle {
+  color: #f5f5f5;
+}
+
+.section-anchors-footer {
+  color: #c6c6c6;
+}
+
+.section-anchors-footer > li::after {
+  background-color: #ef4444;
+}
+
+.section-anchors-footer > li:hover {
+  color: #ef4444;
+}
+
+.social-link-footer {
+  background-color: #111111;
+  color: #f5f5f5;
+  border: 1px solid #750000;
+}
+
+.social-link-footer:hover {
+  background-color: #ef4444;
+  border-color: #ef4444;
+}
+
+.footer-copyright {
+  border-top: 1px solid #750000;
+}
+
+.footer-icon-heart {
+  color: #ef4444;
+}

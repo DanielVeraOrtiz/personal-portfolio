@@ -33,7 +33,7 @@ export default function Navbar() {
         <span>{'/>'}</span>
       </div>
 
-      <ul className="section-anchors flex gap-4">
+      <ul className="section-anchors flex gap-4 text-base">
         {navLinks.map((link, index) => (
           <li
             key={link.label}
