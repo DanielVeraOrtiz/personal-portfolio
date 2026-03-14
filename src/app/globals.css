@@ -3,6 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: rgba(10, 10, 10);
+  --bg-color-navbar: rgba(10, 10, 10, 0.75);
+  --text-logo-color-primary: #f5f5f5;
+  --text-logo-color-secondary: #ef4444;
+  --text-anchor-color-navbar-footer: #c6c6c6;
+  --text-anchor-color-navbar-footer-hover: #ef4444;
+  --bg-btns-primary: linear-gradient(45deg, #da2f2f, #a0020d);
+  --bg-border-hero-logo: linear-gradient(45deg, #f55f5f, #f51624);
+  --bg-hero-logo: #111111;
+  --bg-gradient-titles: linear-gradient(45deg, #f55f5f, #f51624);
+  --text-color-subtitles: #a3a3a3;
+  --bg-hero-anchors: #111111;
+  --borders-color: #750000;
   box-sizing: border-box;
 }
 

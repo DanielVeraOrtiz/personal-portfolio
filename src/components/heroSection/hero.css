@@ -1,40 +1,40 @@
 @reference "tailwindcss";
 
 .gradient-border {
-  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background: var(--bg-border-hero-logo);
 }
 
 .logo-hero {
-  background-color: #111111;
+  background-color: var(--bg-hero-logo);
 }
 
 .descriptions-hero-name {
-  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background: var(--bg-gradient-titles);
   background-clip: text;
 }
 
 .descriptions-hero-work {
-  color: #a3a3a3;
+  color: var(--text-color-subtitles);
 }
 
 .descriptions-hero-description {
-  color: #a3a3a3;
+  color: var(--text-color-subtitles);
 }
 
 .social-link {
   @apply rounded-full p-[0.8rem] text-2xl transition-colors duration-300 ease-in-out;
-  background-color: #111111;
-  color: #f5f5f5;
-  border: 1px solid #750000;
+  background-color: var(--bg-hero-anchors);
+  color: var(--text-logo-color-primary);
+  border: 1px solid var(--borders-color);
 }
 
 .social-link:hover {
-  background-color: #ef4444;
-  border-color: #ef4444;
+  background-color: var(--bg-hero-anchors-hover);
+  border-color: var(--bg-hero-anchors-hover);
 }
 
 .next-section-hero {
-  color: #f51624;
+  color: var(--next-section-hero-color);
 }
 
 /* Si no usara motion cuando se montan los componentes, entonces la flecha debia animarla con keyframe,
