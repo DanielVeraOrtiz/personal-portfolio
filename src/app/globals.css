@@ -31,19 +31,21 @@
     --text-anchor-color-navbar-footer-hover: #ef4444;
     --text-about-strong: #ef4444;
 
+    --text-hover: #ef4444;
     /* ================= BACKGROUNDS ================= */
 
     --bg-color-navbar: rgba(10, 10, 10, 0.75);
     --bg-containers: #111111;
-    --bg-hero-logo: #111111;
 
     --bg-hero-anchors-hover: #ef4444;
     --next-section-hero-color: #f51624;
 
+    --bg-skill-container-hover: #1c1313;
+
     /* ================= BORDERS ================= */
 
     --borders-color: #750000;
-    --borders-color-hover-about: #ef4444;
+    --borders-color-hover: #ef4444;
 
     /* ================= SHADOWS ================= */
 
@@ -61,6 +63,7 @@
       rgba(255, 0, 0, 0.2) 60%,
       transparent 80%
     );
+    --skill-icon-gradient: linear-gradient(45deg, #750000, #f51624);
     box-sizing: border-box;
   }
 }
