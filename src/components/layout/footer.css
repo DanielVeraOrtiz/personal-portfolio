@@ -1,51 +1,51 @@
 .footer {
-  border-top: 1px solid #750000;
-  background-color: #0d0d0d;
+  border-top: 1px solid var(--borders-color);
+  background-color: var(--bg-containers);
 }
 
 .logo-footer {
-  color: #f5f5f5;
+  color: var(--text-logo-color-primary);
 }
 
 .logo-footer > span {
-  color: #ef4444;
+  color: var(--text-logo-color-secondary);
 }
 
 .message-footer {
-  color: #c6c6c6;
+  color: var(--text-color-base-text-secondary);
 }
 
 .footer-subtitle {
-  color: #f5f5f5;
+  color: var(--text-logo-color-primary);
 }
 
 .section-anchors-footer {
-  color: #c6c6c6;
+  color: var(--text-color-base-text-secondary);
 }
 
 .section-anchors-footer > li::after {
-  background-color: #ef4444;
+  background-color: var(--text-anchor-color-navbar-footer-hover);
 }
 
 .section-anchors-footer > li:hover {
-  color: #ef4444;
+  color: var(--text-anchor-color-navbar-footer-hover);
 }
 
 .social-link-footer {
-  background-color: #111111;
-  color: #f5f5f5;
-  border: 1px solid #750000;
+  background-color: var(--bg-containers);
+  color: var(--text-logo-color-primary);
+  border: 1px solid var(--borders-color);
 }
 
 .social-link-footer:hover {
-  background-color: #ef4444;
-  border-color: #ef4444;
+  background-color: var(--bg-hero-anchors-hover);
+  border-color: var(--borders-color-hover);
 }
 
 .footer-copyright {
-  border-top: 1px solid #750000;
+  border-top: 1px solid var(--borders-color);
 }
 
 .footer-icon-heart {
-  color: #ef4444;
+  color: var(--text-logo-color-secondary);
 }

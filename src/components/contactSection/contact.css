@@ -1,51 +1,51 @@
 .contact-title {
-  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background: var(--bg-gradient-titles);
   background-clip: text;
 }
 
 .contact-subtitle {
-  color: #a4a2a2;
+  color: var(--text-color-subtitles);
 }
 
 .contact-type {
-  color: #a4a2a2;
+  color: var(--text-color-base-text-secondary);
 }
 
 .contact-data-container:hover .contact-data {
-  color: #ee4343;
+  color: var(--text-hover);
 }
 
 .contact-information-title,
 .contact-data {
-  color: #f5f5f5;
+  color: var(--text-logo-color-primary);
 }
 
 .contact-available-container {
-  border: 1px solid #750000;
-  background-color: #111111;
-  box-shadow: 0 0 20px 0 #330101;
+  border: 1px solid var(--borders-color);
+  background-color: var(--bg-containers);
+  box-shadow: 0 0 20px 0 var(--boxes-shadow-color);
 }
 
 .contact-available {
-  color: #a4a2a2;
+  color: var(--text-color-base-text-secondary);
 }
 
 .contact-form-input {
-  border: 1px solid #750000;
-  background-color: #111111;
-  box-shadow: 0 0 20px 0 #330101;
+  border: 1px solid var(--borders-color);
+  background-color: var(--bg-containers);
+  box-shadow: 0 0 20px 0 var(--boxes-shadow-color);
 }
 
 .contact-form-input:focus {
-  border-color: #f55f5f;
+  border-color: var(--borders-color-hover);
   outline: none;
 }
 
 .contact-form-btn {
-  background: linear-gradient(45deg, #da2f2f, #a0020d);
+  background: var(--bg-btns-primary);
 }
 
 .contact-form-btn:hover {
-  box-shadow: 0 5px 10px 0 rgba(255, 0, 0, 0.5);
+  box-shadow: 0 5px 10px 0 var(--boxes-shadow-color-hover-btn);
   transform: scale(1.05);
 }

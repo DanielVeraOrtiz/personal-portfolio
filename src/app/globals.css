@@ -65,6 +65,7 @@
     /* ================= SHADOWS ================= */
 
     --boxes-shadow-color: #330101;
+    --boxes-shadow-color-hover-btn: rgba(255, 0, 0, 0.5);
 
     /* ================= GRADIENTS / EFFECTS ================= */
 
