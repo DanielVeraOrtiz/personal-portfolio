@@ -3,7 +3,9 @@
 'use client';
 
 import './navbar.css';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Moon, Sun } from 'lucide-react';
+import { useTheme } from '@/app/themeProvider';
 
 export default function Navbar() {
   // En lugar de repetir en el html, mejor un map
@@ -18,6 +20,8 @@ export default function Navbar() {
     { label: 'Contacto', href: '#contact' },
   ];
 
+  const { toggleTheme, theme } = useTheme();
+
   return (
     // la navbar siempre esta en el viewport por ello en motion debo usar animate en lugar de whileInView para todo
     // lo que ya este en pantalla al iniciar. En caso contrario whileInView y viewport con once true o false.
@@ -27,13 +31,13 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
     >
-      <div className="logo text-2xl hover:scale-105 hover:cursor-pointer transition-transform duration-200 ease-in-out">
+      <div className="w-2/10 logo text-2xl hover:scale-105 hover:cursor-pointer transition-transform duration-200 ease-in-out">
         <span>{'<'}</span>
         Portfolio
         <span>{'/>'}</span>
       </div>
 
-      <ul className="section-anchors flex gap-4 text-base">
+      <ul className="w-6/10 section-anchors flex gap-4 text-base justify-center">
         {navLinks.map((link, index) => (
           <li
             key={link.label}
@@ -51,7 +55,41 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <div className="btn-work-together">
+      <div className="w-2/10 btn-work-together flex gap-2 items-center justify-end">
+        <motion.button
+          onClick={toggleTheme}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.4 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="btn-toggle-theme p-2 rounded-lg border h-fit transition-all duration-300 group"
+          aria-label="Toggle theme"
+        >
+          <AnimatePresence mode="wait">
+            {theme === 'light' ? (
+              <motion.div
+                key="moon"
+                initial={{ rotate: -90, opacity: 0 }}
+                animate={{ rotate: 0, opacity: 1 }}
+                exit={{ rotate: 90, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Moon className="w-5 h-5 transition-colors" />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="sun"
+                initial={{ rotate: 90, opacity: 0 }}
+                animate={{ rotate: 0, opacity: 1 }}
+                exit={{ rotate: -90, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Sun className="w-5 h-5 transition-colors" />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.button>
         {/* Ojo que motion es inline css, entonces sus scale sobrescribiran mis scale por ejemplo */}
         <motion.a
           className="py-2.5 px-5 cursor-pointer block overflow-hidden rounded-xl"

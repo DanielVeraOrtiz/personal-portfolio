@@ -10,7 +10,7 @@
 }
 
 .card-title {
-  color: var(--text-logo-color-primary);
+  color: var(--text-color-base-text);
 }
 
 .card-container:hover .card-title {
@@ -18,7 +18,7 @@
 }
 
 .card-subtitle {
-  color: var(--text-color-subtitles);
+  color: var(--text-color-base-text-secondary);
 }
 
 .card-tag-tool {

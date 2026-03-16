@@ -3,7 +3,7 @@
 }
 
 .modal-container {
-  background-color: var(--bg-containers);
+  background-color: var(--background);
   border: 1px solid var(--borders-color);
 }
 
@@ -13,21 +13,27 @@
 }
 
 .modal-description {
-  color: var(--text-color-base-text-secondary);
+  color: var(--text-color-subtitles);
+}
+
+.modal-tools {
+  color: var(--text-color-titles);
 }
 
 .deploy-link {
   background: var(--bg-btns-primary);
+  color: var(--text-btn-color);
 }
 
 .github-link {
   background-color: var(--bg-btn-github);
   border: 1px solid var(--borders-color);
+  color: var(--text-btn-color);
 }
 
 .other-resolution-title {
   opacity: 0.35;
-  color: var(--text-color-titles);
+  color: var(--text-color-base-text);
 }
 
 .other-resolution:hover > .other-resolution-title {
@@ -44,7 +50,7 @@
 
 .other-resolution-btn:hover {
   background-color: var(--bg-hero-anchors-hover);
-  border-color: var(--borders-color-hover);
+  border-color: var(--bg-hero-anchors-hover);
 }
 
 .other-resolution:hover .other-resolution-btn {
@@ -54,7 +60,7 @@
 .other-resolution-btn-selected {
   color: var(--text-color-base-text);
   opacity: 0.35;
-  background: var(--bg-modal-selected-resolution);
+  background: var(--bg-btns-primary);
   border: 1px solid var(--borders-color-hover);
 }
 

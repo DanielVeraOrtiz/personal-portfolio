@@ -8,7 +8,7 @@
 }
 
 .contact-type {
-  color: var(--text-color-base-text-secondary);
+  color: var(--text-color-subtitles);
 }
 
 .contact-data-container:hover .contact-data {
@@ -17,13 +17,17 @@
 
 .contact-information-title,
 .contact-data {
-  color: var(--text-logo-color-primary);
+  color: var(--text-color-titles);
 }
 
 .contact-available-container {
   border: 1px solid var(--borders-color);
   background-color: var(--bg-containers);
   box-shadow: 0 0 20px 0 var(--boxes-shadow-color);
+}
+
+.contact-schedule-title {
+  color: var(--text-color-base-text);
 }
 
 .contact-available {
@@ -34,6 +38,11 @@
   border: 1px solid var(--borders-color);
   background-color: var(--bg-containers);
   box-shadow: 0 0 20px 0 var(--boxes-shadow-color);
+  color: var(--text-color-base-text);
+}
+
+.contact-form-input::placeholder {
+  color: var(--text-color-base-text-secondary);
 }
 
 .contact-form-input:focus {
@@ -43,6 +52,7 @@
 
 .contact-form-btn {
   background: var(--bg-btns-primary);
+  color: var(--text-btn-color);
 }
 
 .contact-form-btn:hover {

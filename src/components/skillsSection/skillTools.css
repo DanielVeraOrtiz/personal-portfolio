@@ -44,7 +44,7 @@
 
 .basic {
   background-color: var(--bg-skill-tag-basic);
-  border: 1px solid var(--bg-skill-tag-basic);
+  border: 1px solid var(--border-skill-tag-basic);
   color: var(--text-skill-tag-basic);
 }
 

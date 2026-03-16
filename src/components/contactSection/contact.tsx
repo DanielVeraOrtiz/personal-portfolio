@@ -130,7 +130,9 @@ export default function Contact() {
             })}
           </ul>
           <div className="contact-available-container rounded-2xl p-8 flex flex-col gap-4">
-            <h3 className="text-xl font-semibold">Horario de Disponibilidad</h3>
+            <h3 className="contact-schedule-title text-xl font-semibold">
+              Horario de Disponibilidad
+            </h3>
 
             {availability.map((item, i) => (
               <p key={i} className="contact-available">
