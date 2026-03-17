@@ -1,27 +1,28 @@
 .navbar {
-  background-color: rgba(10, 10, 10, 0.75);
+  background-color: var(--bg-color-navbar);
 }
 
 .logo {
-  color: #f5f5f5;
+  color: var(--text-logo-color-primary);
 }
 
 .logo > span {
-  color: #ef4444;
+  color: var(--text-logo-color-secondary);
 }
 
 .section-anchors {
-  color: #c6c6c6;
+  color: var(--text-anchor-color-navbar-footer);
 }
 
 .section-anchors > li::after {
-  background-color: #ef4444;
+  background-color: var(--text-anchor-color-navbar-footer-hover);
 }
 
 .section-anchors > li:hover {
-  color: #ef4444;
+  color: var(--text-anchor-color-navbar-footer-hover);
 }
 
 .btn-work-together > a {
-  background: linear-gradient(45deg, #da2f2f, #a0020d);
+  background: var(--bg-btns-primary);
+  color: var(--text-btn-color);
 }

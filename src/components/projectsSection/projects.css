@@ -1,12 +1,12 @@
 .projects-title {
-  color: #dfdedf;
+  color: var(--text-color-titles);
 }
 
 .projects-title > span {
-  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background: var(--bg-gradient-titles);
   background-clip: text;
 }
 
 .projects-subtitle {
-  color: #a4a2a2;
+  color: var(--text-color-subtitles);
 }

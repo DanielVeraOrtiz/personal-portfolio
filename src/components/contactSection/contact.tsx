@@ -130,7 +130,9 @@ export default function Contact() {
             })}
           </ul>
           <div className="contact-available-container rounded-2xl p-8 flex flex-col gap-4">
-            <h3 className="text-xl font-semibold">Horario de Disponibilidad</h3>
+            <h3 className="contact-schedule-title text-xl font-semibold">
+              Horario de Disponibilidad
+            </h3>
 
             {availability.map((item, i) => (
               <p key={i} className="contact-available">
@@ -175,7 +177,7 @@ export default function Contact() {
             />
             <button
               type="submit"
-              className="contact-form-btn py-2.5 w-full rounded-2xl font-semibold text-center transition-all duration-400 ease-in-out"
+              className="contact-form-btn py-2.5 w-full rounded-xl font-semibold text-center transition-all duration-400 ease-in-out"
             >
               Enviar Mensaje
             </button>

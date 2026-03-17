@@ -3,7 +3,12 @@
 'use client';
 
 import './navbar.css';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
+
+const ButtonTheme = dynamic(() => import('./buttonTheme'), {
+  ssr: false,
+});
 
 export default function Navbar() {
   // En lugar de repetir en el html, mejor un map
@@ -27,13 +32,13 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
     >
-      <div className="logo text-2xl hover:scale-105 hover:cursor-pointer transition-transform duration-200 ease-in-out">
+      <div className="w-2/10 logo text-2xl hover:scale-105 hover:cursor-pointer transition-transform duration-200 ease-in-out">
         <span>{'<'}</span>
         Portfolio
         <span>{'/>'}</span>
       </div>
 
-      <ul className="section-anchors flex gap-4 text-base">
+      <ul className="w-6/10 section-anchors flex gap-4 text-base justify-center">
         {navLinks.map((link, index) => (
           <li
             key={link.label}
@@ -51,7 +56,8 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <div className="btn-work-together">
+      <div className="w-2/10 btn-work-together flex gap-2 items-center justify-end">
+        <ButtonTheme />
         {/* Ojo que motion es inline css, entonces sus scale sobrescribiran mis scale por ejemplo */}
         <motion.a
           className="py-2.5 px-5 cursor-pointer block overflow-hidden rounded-xl"
