@@ -26,3 +26,21 @@
   background: var(--bg-btns-primary);
   color: var(--text-btn-color);
 }
+
+.btn-work-together:hover > a {
+  box-shadow: 0 5px 10px 0 var(--boxes-shadow-color-hover-btn);
+  transform: scale(1.05);
+}
+
+.mobile-menu {
+  background-color: var(--bg-color-navbar);
+  border-bottom: 1px solid var(--borders-color);
+}
+
+.btn-menu {
+  color: var(--text-btn-color);
+}
+
+.btn-menu:hover {
+  background-color: var(--bg-hover-theme-btn);
+}

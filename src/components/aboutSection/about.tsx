@@ -8,7 +8,7 @@ export default function About() {
     <section
       id="about"
       aria-labelledby="about-title"
-      className="w-full h-screen flex items-center justify-center flex-col gap-12"
+      className="w-full min-h-screen flex items-center justify-center flex-col gap-12"
     >
       <motion.h2
         id="about-title"
