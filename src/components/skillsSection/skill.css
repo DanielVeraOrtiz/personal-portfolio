@@ -34,7 +34,7 @@
 }
 
 .skill-title {
-  color: var(--text-logo-color-primary);
+  color: var(--text-color-titles);
 }
 
 .skill-container:hover .skill-title {

@@ -23,7 +23,7 @@
 }
 
 .skill-tool-title {
-  color: var(--text-logo-color-primary);
+  color: var(--text-color-titles);
 }
 
 .skill-tool-container:hover .skill-tool-title {

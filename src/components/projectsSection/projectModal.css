@@ -33,7 +33,7 @@
 
 .other-resolution-title {
   opacity: 0.35;
-  color: var(--text-color-base-text);
+  color: var(--text-modal-resolution);
 }
 
 .other-resolution:hover > .other-resolution-title {
@@ -50,7 +50,7 @@
 
 .other-resolution-btn:hover {
   background-color: var(--bg-hero-anchors-hover);
-  border-color: var(--bg-hero-anchors-hover);
+  border-color: var(--borders-color-hover);
 }
 
 .other-resolution:hover .other-resolution-btn {

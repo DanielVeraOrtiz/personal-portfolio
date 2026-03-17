@@ -24,7 +24,7 @@
 
 .btn-toggle-theme {
   border: 1px solid var(--border-color-theme-btn);
-  background-color: var(--bg-containers);
+  background-color: var(--bg-btn-theme);
   color: var(--text-btn-color);
 }
 

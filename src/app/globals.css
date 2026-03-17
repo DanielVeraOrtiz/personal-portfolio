@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 :root {
-  --background: rgb(255, 243, 243);
+  --background: #f8f8f8;
   --foreground: #1c1c1c;
 
   /* ================= TEXT ================= */
@@ -11,10 +11,10 @@
   --text-hover: #ef4444;
   --text-btn-color: #ffffff;
   --text-theme-btn-color: #ef4444;
-  --text-color-titles: #0f0f0f;
-  --text-color-subtitles: #131313;
-  --text-color-base-text: #fafafa;
-  --text-color-base-text-secondary: #dbdbdb;
+  --text-color-titles: #000000;
+  --text-color-subtitles: #222222;
+  --text-color-base-text: #000000;
+  --text-color-base-text-secondary: #222222;
 
   --text-anchor-color-navbar-footer: #ffffff;
   --text-anchor-color-navbar-footer-hover: #ef4444;
@@ -24,14 +24,23 @@
   --text-skill-tag-advanced: #bb3a3a;
   --text-skill-tag-basic: #4a700d;
 
+  --text-modal-resolution: #f8f8f8;
+
+  --text-placeholder-inputs: #7a7a7a;
+
+  --text-footer-primary: #ffffff;
+  --text-footer-secondary: #f8f8f8;
+
   /* ================= BACKGROUNDS ================= */
 
   --bg-color-navbar: #500000;
-  --bg-containers: #500000;
+  --bg-btn-theme: #610000;
+
+  --bg-containers: #f0f0f0;
   --bg-hover-theme-btn: #360000;
-  --bg-hero-anchors-hover: #2e0000;
+  --bg-hero-anchors-hover: #e2e1e1;
   --next-section-hero-color: #500000;
-  --bg-skill-container-hover: #2e0000;
+  --bg-skill-container-hover: #e2e1e1;
 
   --bg-skill-tag-intermediate: #fdcea6;
   --bg-skill-tag-advanced: #fcaeae;
@@ -41,6 +50,8 @@
 
   --bg-modal-backdrop: rgba(0, 0, 0, 0.75);
   --bg-btn-github: #010409;
+
+  --bg-footer: #500000;
 
   /* ================= BORDERS ================= */
   --border-color-theme-btn: #fafafa;
@@ -52,14 +63,14 @@
   --border-skill-tag-advanced: #ef4444;
   --border-skill-tag-basic: #4a700d;
   /* ================= SHADOWS ================= */
-  --boxes-shadow-color: #5a0000;
+  --boxes-shadow-color: #ffc5c5;
   --boxes-shadow-color-hover-btn: rgba(239, 68, 68, 0.3);
 
   /* ================= GRADIENTS / EFFECTS ================= */
 
   --bg-btns-primary: linear-gradient(45deg, #d35050, #ff0011);
 
-  --bg-border-hero-logo: linear-gradient(45deg, #f87171, #ef4444);
+  --bg-border-hero-logo: linear-gradient(45deg, #500000, #520000);
   --bg-gradient-titles: linear-gradient(45deg, #500000, #520000);
 
   --bg-particles-hero: radial-gradient(
@@ -107,9 +118,18 @@
   --text-skill-tag-advanced: #ef4444;
   --text-skill-tag-basic: #4a700d;
 
+  --text-modal-resolution: #dfdedf;
+
+  --text-placeholder-inputs: #a3a3a3;
+
+  --text-footer-primary: #dfdedf;
+  --text-footer-secondary: #c6c6c6;
+
   /* ================= BACKGROUNDS ================= */
 
   --bg-color-navbar: rgba(10, 10, 10, 0.75);
+  --bg-btn-theme: #111111;
+
   --bg-containers: #111111;
   --bg-hover-theme-btn: #222222;
 
@@ -124,6 +144,8 @@
 
   --bg-modal-backdrop: rgba(0, 0, 0, 0.8);
   --bg-btn-github: #1a1a1a;
+
+  --bg-footer: #111111;
 
   /* ================= BORDERS ================= */
 

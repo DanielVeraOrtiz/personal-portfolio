@@ -1,6 +1,6 @@
 .footer {
   border-top: 1px solid var(--borders-color);
-  background-color: var(--bg-containers);
+  background-color: var(--bg-footer);
 }
 
 .logo-footer {
@@ -12,15 +12,15 @@
 }
 
 .message-footer {
-  color: var(--text-color-base-text-secondary);
+  color: var(--text-footer-secondary);
 }
 
 .footer-subtitle {
-  color: var(--text-logo-color-primary);
+  color: var(--text-footer-primary);
 }
 
 .section-anchors-footer {
-  color: var(--text-color-base-text-secondary);
+  color: var(--text-footer-secondary);
 }
 
 .section-anchors-footer > li::after {
@@ -33,7 +33,7 @@
 
 .social-link-footer {
   background-color: var(--bg-containers);
-  color: var(--text-logo-color-primary);
+  color: var(--text-color-titles);
   border: 1px solid var(--borders-color);
 }
 

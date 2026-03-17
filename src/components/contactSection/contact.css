@@ -42,7 +42,7 @@
 }
 
 .contact-form-input::placeholder {
-  color: var(--text-color-base-text-secondary);
+  color: var(--text-placeholder-inputs);
 }
 
 .contact-form-input:focus {

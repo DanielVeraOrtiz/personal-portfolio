@@ -24,13 +24,13 @@
 .social-link {
   @apply rounded-full p-[0.8rem] text-2xl transition-colors duration-300 ease-in-out;
   background-color: var(--bg-containers);
-  color: var(--text-logo-color-primary);
+  color: var(--text-color-titles);
   border: 1px solid var(--borders-color);
 }
 
 .social-link:hover {
   background-color: var(--bg-hero-anchors-hover);
-  border-color: var(--bg-hero-anchors-hover);
+  border-color: var(--borders-color-hover);
 }
 
 .next-section-hero {

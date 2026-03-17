@@ -177,7 +177,7 @@ export default function Contact() {
             />
             <button
               type="submit"
-              className="contact-form-btn py-2.5 w-full rounded-2xl font-semibold text-center transition-all duration-400 ease-in-out"
+              className="contact-form-btn py-2.5 w-full rounded-xl font-semibold text-center transition-all duration-400 ease-in-out"
             >
               Enviar Mensaje
             </button>
