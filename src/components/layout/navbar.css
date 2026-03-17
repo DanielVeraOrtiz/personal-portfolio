@@ -22,18 +22,6 @@
   color: var(--text-anchor-color-navbar-footer-hover);
 }
 
-.btn-toggle-theme {
-  border: 1px solid var(--border-color-theme-btn);
-  background-color: var(--bg-btn-theme);
-  color: var(--text-btn-color);
-}
-
-.btn-toggle-theme:hover {
-  background-color: var(--bg-hover-theme-btn);
-  border-color: var(--border-color-theme-btn-hover);
-  color: var(--text-theme-btn-color);
-}
-
 .btn-work-together > a {
   background: var(--bg-btns-primary);
   color: var(--text-btn-color);

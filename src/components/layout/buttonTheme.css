@@ -1,0 +1,11 @@
+.btn-toggle-theme {
+  border: 1px solid var(--border-color-theme-btn);
+  background-color: var(--bg-btn-theme);
+  color: var(--text-btn-color);
+}
+
+.btn-toggle-theme:hover {
+  background-color: var(--bg-hover-theme-btn);
+  border-color: var(--border-color-theme-btn-hover);
+  color: var(--text-theme-btn-color);
+}
