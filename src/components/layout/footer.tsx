@@ -63,8 +63,8 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-copyright pt-8 text-center">
-          <p className="message-footer flex items-center justify-center gap-2">
-            Hecho con <span className="footer-icon-heart">♥</span> por Daniel Vera Ortiz ©{' '}
+          <p className="message-footer flex items-center justify-center">
+            Hecho con <span className="footer-icon-heart mx-2">♥</span> por Daniel Vera Ortiz ©{' '}
             {currentYear}
           </p>
         </div>

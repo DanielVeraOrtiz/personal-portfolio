@@ -67,12 +67,12 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full py-16 justify-center items-center flex flex-col"
+      className="w-full 2xl:py-16 py-26 px-4 lg:px-8 justify-center items-center flex flex-col"
       aria-labelledby="contact-title"
     >
       <motion.h2
         id="contact-title"
-        className="contact-title text-transparent text-[4.5rem] font-semibold"
+        className="contact-title text-transparent text-[3rem] lg:text-[4.5rem] font-semibold"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -81,7 +81,7 @@ export default function Contact() {
         Contáctame
       </motion.h2>
       <motion.p
-        className="contact-subtitle text-lg mb-12"
+        className="contact-subtitle text-lg mb-12 text-center"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -89,7 +89,7 @@ export default function Contact() {
       >
         ¿Tienes un proyecto en mente? No dudes en contactarme
       </motion.p>
-      <div className="grid grid-cols-2 gap-16 w-3/4 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-16 w-full xl:w-3/4 justify-center">
         <motion.div
           className="flex flex-col gap-6"
           initial={{ opacity: 0, x: -50 }}

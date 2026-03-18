@@ -20,11 +20,11 @@ export default function Projects() {
     <section
       id="projects"
       aria-labelledby="projects-title"
-      className="min-h-screen w-full flex flex-col justify-center items-center py-16"
+      className="2xl:py-16 py-26 px-4 lg:px-8 min-h-screen md:min-h-fit 2xl:min-h-screen w-full flex flex-col justify-center items-center"
     >
       <motion.h2
         id="projects-title"
-        className="projects-title text-[4.5rem] font-semibold"
+        className="projects-title text-[3rem] lg:text-[4.5rem] text-center font-semibold"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -33,7 +33,7 @@ export default function Projects() {
         Mis <span className="text-transparent">Proyectos</span>
       </motion.h2>
       <motion.p
-        className="projects-subtitle text-lg mb-12"
+        className="projects-subtitle text-lg mb-12 text-center"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -42,7 +42,7 @@ export default function Projects() {
         Todos los proyectos universitarios/personales en los que he trabajado
       </motion.p>
       <motion.div
-        className="grid grid-cols-3 gap-8 w-3/4 justify-center"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full xl:w-3/4 justify-center"
         variants={container}
         initial="hidden"
         whileInView="show"
