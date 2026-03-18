@@ -36,14 +36,14 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
     >
-      <div className="p-8 flex justify-between items-center backdrop-blur-md">
-        <div className="w-2/10 logo text-2xl hover:scale-105 hover:cursor-pointer transition-transform duration-200 ease-in-out">
+      <div className="px-8 flex justify-between items-center backdrop-blur-md h-full">
+        <div className="w-3/10 logo text-2xl hover:scale-105 hover:cursor-pointer transition-transform duration-200 ease-in-out">
           <span>{'<'}</span>
           Portfolio
           <span>{'/>'}</span>
         </div>
 
-        <ul className="hidden lg:flex w-6/10 section-anchors gap-4 text-base justify-center">
+        <ul className="hidden lg:flex w-4/10 section-anchors gap-4 text-base justify-center">
           {navLinks.map((link, index) => (
             <li
               key={link.label}
@@ -61,7 +61,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden lg:flex w-2/10 btn-work-together gap-2 items-center justify-end">
+        <div className="hidden lg:flex w-3/10 btn-work-together gap-2 items-center justify-end">
           <ButtonTheme />
           {/* Ojo que motion es inline css, entonces sus scale sobrescribiran mis scale por ejemplo */}
           <motion.a
@@ -103,9 +103,9 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="absolute z-50 left-0 top-[9vh] mobile-menu lg:hidden w-full backdrop-blur-md"
+            className="absolute z-1 left-0 top-[9vh] mobile-menu lg:hidden w-full backdrop-blur-md"
           >
-            <div className="relative z-50 px-8 py-6 w-full">
+            <div className="relative z-1 px-8 py-6 w-full">
               <ul className="section-anchors text-base flex flex-col gap-3 justify-center items-center">
                 {navLinks.map((link) => (
                   <li

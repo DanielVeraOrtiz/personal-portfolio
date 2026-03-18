@@ -47,12 +47,12 @@ export default function SkillTools() {
   const visibleTools = skillTools.slice(index, index + itemsPerPage);
   return (
     <section
-      className="h-screen w-full flex justify-center items-center flex-col"
+      className="2xl:py-0 py-26 px-4 lg:px-8 min-h-screen md:min-h-fit 2xl:min-h-screen w-full flex justify-center items-center flex-col"
       aria-labelledby="skill-tools-frameworks"
     >
       <motion.h2
         id="skill-tools-frameworks"
-        className="skill-frameworks-title text-[4.5rem] font-semibold"
+        className="skill-frameworks-title text-[3rem] lg:text-[4.5rem] font-semibold text-center"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -61,7 +61,7 @@ export default function SkillTools() {
         Lenguajes & <span className="text-transparent">Tecnologías</span>
       </motion.h2>
       <motion.p
-        className="skill-frameworks-subtitle text-lg mb-12"
+        className="skill-frameworks-subtitle text-lg text-center mb-12"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -71,7 +71,7 @@ export default function SkillTools() {
       </motion.p>
       <motion.div
         key={index}
-        className="flex flex-wrap gap-8 w-3/4 justify-center mb-8"
+        className="flex flex-wrap gap-8 w-full xl:w-3/4 justify-center mb-8"
         variants={container}
         initial="hidden"
         whileInView="show"
@@ -87,7 +87,7 @@ export default function SkillTools() {
             key={`${i}-${skillTool.toolName}`}
             variants={item}
             transition={{ duration: 0.8 }}
-            className="skill-tool-container relative flex-1 min-w-1/5 max-w-1/4 rounded-3xl flex flex-col items-center p-8 hover:scale-105 transition-all duration-300 ease-in-out"
+            className="skill-tool-container relative flex-1 lg:min-w-1/5 lg:max-w-1/4 md:min-w-1/4 md:max-w-1/3 min-w-9/20 max-w-1/2 rounded-3xl flex flex-col items-center p-8 hover:scale-105 transition-all duration-300 ease-in-out"
           >
             <Image
               className="skill-tool-icon mb-2"
@@ -97,7 +97,7 @@ export default function SkillTools() {
               height={80}
             />
 
-            <h3 className="skill-tool-title text-xl mb-4 transition-colors duration-300 ease-in-out">
+            <h3 className="skill-tool-title text-center text-xl mb-4 transition-colors duration-300 ease-in-out">
               {skillTool.toolName}
             </h3>
 
