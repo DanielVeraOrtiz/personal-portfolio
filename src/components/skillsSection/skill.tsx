@@ -12,7 +12,7 @@ export default function Skills() {
       className="2xl:py-0 py-26 px-4 lg:px-8 min-h-screen md:min-h-fit 2xl:min-h-screen w-full flex justify-center items-center flex-col"
     >
       <motion.h2
-        className="skill-title-section text-[3rem] lg:text-[4.5rem] font-semibold"
+        className="skill-title-section text-[3rem] lg:text-[4.5rem] font-semibold text-center"
         id="skills-title"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
