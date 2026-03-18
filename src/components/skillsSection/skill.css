@@ -1,46 +1,46 @@
 @reference "tailwindcss";
 
 .skill-title-section {
-  color: #dfdedf;
+  color: var(--text-color-titles);
 }
 
 .skill-title-section > span {
-  background: linear-gradient(45deg, #f55f5f, #f51624);
+  background: var(--bg-gradient-titles);
   background-clip: text;
 }
 
 .skill-subtitle {
-  color: #a4a2a2;
+  color: var(--text-color-subtitles);
 }
 
 .skill-container {
-  background-color: #111111;
-  border: 1px solid #750000;
-  box-shadow: 0 0 20px 0 #330101;
+  background-color: var(--bg-containers);
+  border: 1px solid var(--borders-color);
+  box-shadow: 0 0 20px 0 var(--boxes-shadow-color);
 }
 
 .skill-container:hover {
-  background-color: #1c1313;
-  border-color: #ee4343;
+  background-color: var(--bg-skill-container-hover);
+  border-color: var(--borders-color-hover);
 }
 
 .skill-icon-border {
-  background: linear-gradient(45deg, #750000, #f51624);
+  background: var(--skill-icon-gradient);
 }
 
 .skill-icon {
-  background-color: #111111;
-  color: #ef4444;
+  background-color: var(--bg-containers);
+  color: var(--text-logo-color-secondary);
 }
 
 .skill-title {
-  color: #f5f5f5;
+  color: var(--text-color-titles);
 }
 
 .skill-container:hover .skill-title {
-  color: #ee4343;
+  color: var(--text-hover);
 }
 
 .skill-tech {
-  color: #a4a2a2;
+  color: var(--text-color-base-text-secondary);
 }

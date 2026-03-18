@@ -8,11 +8,11 @@ export default function About() {
     <section
       id="about"
       aria-labelledby="about-title"
-      className="w-full h-screen flex items-center justify-center flex-col gap-12"
+      className="w-full 2xl:py-0 py-26 px-4 lg:px-8 min-h-screen md:min-h-fit 2xl:min-h-screen  flex items-center justify-center flex-col gap-12"
     >
       <motion.h2
         id="about-title"
-        className="about-title-section text-[4.5rem] font-semibold"
+        className="about-title-section text-[3rem] lg:text-[4.5rem] font-semibold"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -20,9 +20,9 @@ export default function About() {
       >
         Sobre <span className="text-transparent bg-clip-text">Mí</span>
       </motion.h2>
-      <div className="flex gap-16 justify-center">
+      <div className="flex gap-8 justify-center flex-col md:flex-row">
         <motion.div
-          className="about-description w-3/10 text-lg rounded-[20px] p-8 text-justify leading-normal"
+          className="xl:w-4/10 2xl:w-3/10 md:w-6/10 about-description text-lg rounded-[20px] p-8 text-justify leading-normal"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -45,26 +45,26 @@ export default function About() {
           </p>
         </motion.div>
         <motion.div
-          className="w-3/10 flex flex-col gap-8 justify-center"
+          className="xl:w-4/10 2xl:w-3/10 md:w-4/10 flex flex-col gap-8 justify-center"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           <div className="about-container-data">
-            <p className="flex items-center">
+            <p className="flex items-center gap-2">
               Años de Experiencia Laboral
               <strong className="ml-auto text-[1.875rem] font-medium">0</strong>
             </p>
           </div>
           <div className="about-container-data">
-            <p className="flex items-center">
-              Proyectos Personales/Universitarios Realizados
+            <p className="flex items-center gap-2">
+              Proyectos Personales / Universitarios Realizados
               <strong className="ml-auto text-[1.875rem] font-medium">5</strong>
             </p>
           </div>
           <div className="about-container-data">
-            <p className="flex items-center">
+            <p className="flex items-center gap-2">
               Motivación por Aprender y Trabajar
               <strong className="ml-auto text-[1.875rem] font-medium">∞</strong>
             </p>

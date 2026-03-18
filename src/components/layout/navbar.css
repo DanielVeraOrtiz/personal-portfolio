@@ -1,27 +1,46 @@
 .navbar {
-  background-color: rgba(10, 10, 10, 0.75);
+  background-color: var(--bg-color-navbar);
 }
 
 .logo {
-  color: #f5f5f5;
+  color: var(--text-logo-color-primary);
 }
 
 .logo > span {
-  color: #ef4444;
+  color: var(--text-logo-color-secondary);
 }
 
 .section-anchors {
-  color: #c6c6c6;
+  color: var(--text-anchor-color-navbar-footer);
 }
 
 .section-anchors > li::after {
-  background-color: #ef4444;
+  background-color: var(--text-anchor-color-navbar-footer-hover);
 }
 
 .section-anchors > li:hover {
-  color: #ef4444;
+  color: var(--text-anchor-color-navbar-footer-hover);
 }
 
 .btn-work-together > a {
-  background: linear-gradient(45deg, #da2f2f, #a0020d);
+  background: var(--bg-btns-primary);
+  color: var(--text-btn-color);
+}
+
+.btn-work-together:hover > a {
+  box-shadow: 0 5px 10px 0 var(--boxes-shadow-color-hover-btn);
+  transform: scale(1.05);
+}
+
+.mobile-menu {
+  background-color: var(--bg-color-navbar);
+  border-bottom: 1px solid var(--borders-color);
+}
+
+.btn-menu {
+  color: var(--text-btn-color);
+}
+
+.btn-menu:hover {
+  background-color: var(--bg-hover-theme-btn);
 }

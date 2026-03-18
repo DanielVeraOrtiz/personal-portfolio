@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="w-full h-screen flex flex-col justify-center items-center my-0 mx-auto gap-4 relative z-0 overflow-hidden"
+      className="w-full min-h-screen md:py-26 py-26 px-4 flex flex-col justify-center items-center my-0 mx-auto gap-4 relative z-0 overflow-hidden"
     >
       <Particles quantity={25} />
       <motion.div
@@ -34,7 +34,7 @@ export default function Hero() {
       </motion.div>
       <div className="flex flex-col justify-center text-center relative z-999">
         <motion.h1
-          className="descriptions-hero-name text-8xl font-semibold text-transparent bg-clip-text pb-6"
+          className="descriptions-hero-name text-6xl lg:text-8xl font-semibold text-transparent bg-clip-text pb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
@@ -42,7 +42,7 @@ export default function Hero() {
           Daniel Vera Ortiz
         </motion.h1>
         <motion.p
-          className="descriptions-hero-work text-2xl"
+          className="descriptions-hero-work text-xl md:text-2xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
@@ -50,7 +50,7 @@ export default function Hero() {
           Desarrollador Full Stack
         </motion.p>
         <motion.p
-          className="descriptions-hero-description w-[55%] text-lg pt-2 pb-6 my-0 mx-auto"
+          className="descriptions-hero-description md:w-[55%] text-lg pt-2 pb-6 my-0 mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
