@@ -31,7 +31,7 @@ export default function Navbar() {
     // la navbar siempre esta en el viewport por ello en motion debo usar animate en lugar de whileInView para todo
     // lo que ya este en pantalla al iniciar. En caso contrario whileInView y viewport con once true o false.
     <motion.header
-      className="navbar fixed top-0 left-0 w-full h-[10vh] z-1"
+      className="navbar fixed top-0 left-0 w-[100vw] h-[10vh] z-1"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}

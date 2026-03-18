@@ -52,19 +52,19 @@ export default function About() {
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           <div className="about-container-data">
-            <p className="flex items-center">
+            <p className="flex items-center gap-2">
               Años de Experiencia Laboral
               <strong className="ml-auto text-[1.875rem] font-medium">0</strong>
             </p>
           </div>
           <div className="about-container-data">
-            <p className="flex items-center">
+            <p className="flex items-center gap-2">
               Proyectos Personales / Universitarios Realizados
               <strong className="ml-auto text-[1.875rem] font-medium">5</strong>
             </p>
           </div>
           <div className="about-container-data">
-            <p className="flex items-center">
+            <p className="flex items-center gap-2">
               Motivación por Aprender y Trabajar
               <strong className="ml-auto text-[1.875rem] font-medium">∞</strong>
             </p>

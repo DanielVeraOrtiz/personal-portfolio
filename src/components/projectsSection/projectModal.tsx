@@ -75,15 +75,15 @@ export default function ProjectModal({
           }}
         >
           <motion.div
-            className="modal-container rounded-2xl w-8/10 flex relative"
+            className="modal-container rounded-2xl 2xl:max-w-8/10 max-w-150 mx-2 flex flex-col 2xl:flex-row relative max-h-[80vh] translate-y-[5vh]"
             onClick={(e) => e.stopPropagation()}
             initial={{ opacity: 0.75, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <div className="carrusel flex-3 relative">
-              <div className="other-resolution absolute -top-24 right-1/2 translate-x-1/2 flex flex-col gap-2 text-2xl">
-                <h3 className="other-resolution-title text-xl font-semibold transition-opacity duration-300 ease-in-out">
+              <div className="other-resolution absolute w-60 -top-24 right-1/2 translate-x-1/2 flex flex-col gap-2 text-2xl">
+                <h3 className="other-resolution-title text-center text-xl font-semibold transition-opacity duration-300 ease-in-out">
                   Vista por dispositivo
                 </h3>
                 <div className="flex gap-4 justify-center">
@@ -157,7 +157,7 @@ export default function ProjectModal({
                   <FaChevronRight />
                 </button>
               </div>
-              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
+              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
                 {Array.from({ length: images.length }).map((_, i) => {
                   const active = i === current;
 
@@ -173,7 +173,7 @@ export default function ProjectModal({
                 })}
               </div>
             </div>
-            <div className="flex-2 p-8 justify-between flex flex-col">
+            <div className="flex-2 p-8 justify-between flex flex-col gap-4 max-h-[50vh] lg:max-h-screen overflow-y-scroll xl:overflow-y-hidden">
               <div className="flex flex-col gap-4 text-justify">
                 <h3 className="modal-title text-3xl font-semibold text-transparent">{name}</h3>
                 <p className="modal-description text-lg">{description}</p>
