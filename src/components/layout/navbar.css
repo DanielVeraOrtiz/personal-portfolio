@@ -2,8 +2,16 @@
   background-color: var(--bg-color-navbar);
 }
 
-.logo {
+.logo:hover {
+  background-color: var(--bg-hover-theme-btn);
+}
+
+.logo-text-name {
   color: var(--text-logo-color-primary);
+}
+
+.logo-text-work {
+  color: var(--text-logo-color-tertiary);
 }
 
 .logo > span {
@@ -43,4 +51,11 @@
 
 .btn-menu:hover {
   background-color: var(--bg-hover-theme-btn);
+}
+
+@media (width < 414) {
+  .logo-text-name,
+  .logo-text-work {
+    display: none;
+  }
 }

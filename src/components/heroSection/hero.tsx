@@ -8,6 +8,7 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { FaRegUser } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { FaArrowDownLong } from 'react-icons/fa6';
+import { contactLinks } from '@/config/contact';
 
 // Desacticar el server side rendering para las particulas, esto lo refactorice haciando particulas un componente
 // para no desactivar el ssr en todo Hero, que afecta SEO y demas.
@@ -68,7 +69,7 @@ export default function Hero() {
         <a
           className="social-link group"
           title="GitHub"
-          href="hola"
+          href={contactLinks.githubLink}
           target="_blank"
           aria-label="link to my github"
         >
@@ -80,7 +81,7 @@ export default function Hero() {
         <a
           className="social-link group"
           title="Linkedin"
-          href="hola"
+          href={contactLinks.linkedingLink}
           target="_blank"
           aria-label="link to my linkedin"
         >
@@ -92,8 +93,7 @@ export default function Hero() {
         <a
           className="social-link group"
           title="email"
-          href="hola"
-          target="_blank"
+          href={contactLinks.correoAnchor}
           aria-label="my email"
         >
           <MdOutlineEmail

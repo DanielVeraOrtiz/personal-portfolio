@@ -25,10 +25,20 @@
   color: var(--text-btn-color);
 }
 
+.deploy-link:hover {
+  box-shadow: 0 5px 10px 0 var(--boxes-shadow-color-hover-btn);
+  transform: scale(1.05);
+}
+
 .github-link {
   background-color: var(--bg-btn-github);
   border: 1px solid var(--borders-color);
   color: var(--text-btn-color);
+}
+
+.github-link:hover {
+  transform: scale(1.05);
+  background-color: var(--bg-hover-github-links);
 }
 
 .other-resolution-title {

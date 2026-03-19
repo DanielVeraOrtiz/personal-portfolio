@@ -4,6 +4,7 @@
 
 import './navbar.css';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
@@ -31,16 +32,23 @@ export default function Navbar() {
     // la navbar siempre esta en el viewport por ello en motion debo usar animate en lugar de whileInView para todo
     // lo que ya este en pantalla al iniciar. En caso contrario whileInView y viewport con once true o false.
     <motion.header
-      className="navbar fixed top-0 left-0 w-[100vw] h-[10vh] z-1"
+      className="navbar fixed top-0 left-0 w-screen h-23 z-1"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
     >
       <div className="px-8 flex justify-between items-center backdrop-blur-md h-full">
-        <div className="w-3/10 logo text-2xl hover:scale-105 hover:cursor-pointer transition-transform duration-200 ease-in-out">
-          <span>{'<'}</span>
-          Portfolio
-          <span>{'/>'}</span>
+        <div className="w-5/10 lg:w-3/10">
+          <a
+            href="#"
+            className="w-fit rounded-xl py-2 px-1 flex gap-2 logo hover:cursor-pointer transition-colors duration-200 ease-in-out"
+          >
+            <Image className="rounded-full" src="/face.png" alt="foto mia" width={40} height={40} />
+            <div>
+              <p className="logo-text-name text-base font-semibold">Daniel Vera</p>
+              <p className="logo-text-work text-xs">Desarrollador Full Stack</p>
+            </div>
+          </a>
         </div>
 
         <ul className="hidden lg:flex w-4/10 section-anchors gap-4 text-base justify-center">
@@ -61,7 +69,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden lg:flex w-3/10 btn-work-together gap-2 items-center justify-end">
+        <div className="hidden lg:flex w-5/10 lg:w-3/10 btn-work-together gap-2 items-center justify-end">
           <ButtonTheme />
           {/* Ojo que motion es inline css, entonces sus scale sobrescribiran mis scale por ejemplo */}
           <motion.a

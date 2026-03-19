@@ -1,11 +1,13 @@
 'use client';
 
 import './contact.css';
+import { contactLinks } from '@/config/contact';
 import { motion } from 'framer-motion';
 import { MdOutlineEmail } from 'react-icons/md';
 import { FiPhone } from 'react-icons/fi';
 import { SlLocationPin } from 'react-icons/sl';
 import { useState } from 'react';
+import { FaRegPaperPlane } from 'react-icons/fa';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -27,20 +29,20 @@ export default function Contact() {
     {
       icon: MdOutlineEmail,
       label: 'Email',
-      value: 'daniel.vera.or@gmail.com',
-      href: 'mailto:daniel.vera.or@gmail.com',
+      value: contactLinks.correo,
+      href: contactLinks.correoAnchor,
     },
     {
       icon: FiPhone,
       label: 'Número',
-      value: '+56 9 21731350',
-      href: 'tel:+56921731350',
+      value: contactLinks.numeroTelefono,
+      href: contactLinks.numeroTelefonoAnchor,
     },
     {
       icon: SlLocationPin,
       label: 'Ubicación',
-      value: 'Chile, Santiago',
-      href: 'https://maps.google.com/?q=Santiago,Chile',
+      value: contactLinks.ubicacion,
+      href: contactLinks.ubicacionAnchor,
     },
   ];
 
@@ -177,9 +179,9 @@ export default function Contact() {
             />
             <button
               type="submit"
-              className="contact-form-btn py-2.5 w-full rounded-xl font-semibold text-center transition-all duration-400 ease-in-out"
+              className="contact-form-btn flex items-center justify-center gap-2 py-2.5 w-full rounded-xl font-semibold text-center transition-all duration-400 ease-in-out"
             >
-              Enviar Mensaje
+              <FaRegPaperPlane /> Enviar Mensaje
             </button>
           </form>
         </motion.div>
