@@ -8,6 +8,7 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import { FaArrowDownLong } from 'react-icons/fa6';
 import { contactLinks } from '@/config/contact';
+import { GoDownload } from 'react-icons/go';
 import Image from 'next/image';
 
 // Desacticar el server side rendering para las particulas, esto lo refactorice haciando particulas un componente
@@ -61,10 +62,11 @@ export default function Hero() {
         </motion.p>
       </div>
       <a
-        className="btn-cv relative z-999 py-2.5 px-5 rounded-xl flex gap-2 my-4 transition-all duration-400 ease-in-out"
+        className="btn-cv relative z-999 py-2.5 px-5 rounded-xl flex gap-1 items-center my-4 transition-all duration-400 ease-in-out"
         href="/face.png"
         download
       >
+        <GoDownload className="w-5 h-5" />
         Descargar CV
       </a>
       <motion.div
