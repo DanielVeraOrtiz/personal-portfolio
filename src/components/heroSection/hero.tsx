@@ -51,7 +51,7 @@ export default function Hero() {
           Desarrollador Full Stack
         </motion.p>
         <motion.p
-          className="descriptions-hero-description md:w-[55%] text-lg pt-2 pb-6 my-0 mx-auto"
+          className="descriptions-hero-description md:w-[55%] text-lg pt-2 my-0 mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
@@ -60,6 +60,13 @@ export default function Hero() {
           Apasionado por resolver problemas complejos y construir aplicaciones escalables.
         </motion.p>
       </div>
+      <a
+        className="btn-cv relative z-999 py-2.5 px-5 rounded-xl flex gap-2 my-4 transition-all duration-400 ease-in-out"
+        href="/face.png"
+        download
+      >
+        Descargar CV
+      </a>
       <motion.div
         className="flex gap-6 relative z-999"
         initial={{ opacity: 0, y: 20 }}

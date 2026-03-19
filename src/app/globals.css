@@ -1,8 +1,13 @@
 @import 'tailwindcss';
 
+*:focus {
+  outline: 2px solid var(--outline-focus);
+}
+
 :root {
   --background: #f8f8f8;
   --foreground: #1c1c1c;
+  --outline-focus: black;
 
   /* ================= TEXT ================= */
 
@@ -99,6 +104,8 @@
 [data-theme='dark'] {
   --background: rgba(10, 10, 10);
   --foreground: #ededed;
+  --outline-focus: white;
+
   /* ================= TEXT ================= */
 
   --text-logo-color-primary: #dfdedf;
