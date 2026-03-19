@@ -43,7 +43,13 @@ export default function Navbar() {
             href="#"
             className="w-fit rounded-xl py-2 px-1 flex gap-2 logo hover:cursor-pointer transition-colors duration-200 ease-in-out"
           >
-            <Image className="rounded-full" src="/face.png" alt="foto mia" width={40} height={40} />
+            <Image
+              className="image-logo rounded-full"
+              src="/face4.png"
+              alt="foto mia"
+              width={40}
+              height={40}
+            />
             <div>
               <p className="logo-text-name text-base font-semibold">Daniel Vera</p>
               <p className="logo-text-work text-xs">Desarrollador Full Stack</p>

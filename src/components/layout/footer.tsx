@@ -28,8 +28,8 @@ export default function Footer() {
           <div>
             <div className="w-fit rounded-xl mb-2 py-2 px-1 flex gap-2 logo-footer transition-colors duration-200 ease-in-out">
               <Image
-                className="rounded-full"
-                src="/face.png"
+                className="rounded-full image-logo-footer"
+                src="/face4.png"
                 alt="foto mia"
                 width={40}
                 height={40}

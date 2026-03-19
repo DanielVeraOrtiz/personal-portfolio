@@ -7,6 +7,10 @@
   background-color: var(--bg-hover-theme-btn);
 }
 
+.image-logo-footer {
+  border: 2px solid var(--borders-color);
+}
+
 .logo-text-name-footer {
   color: var(--text-logo-color-primary);
 }

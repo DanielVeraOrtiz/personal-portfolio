@@ -5,10 +5,10 @@ import dynamic from 'next/dynamic';
 import { FiGithub } from 'react-icons/fi';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
-import { FaRegUser } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { FaArrowDownLong } from 'react-icons/fa6';
 import { contactLinks } from '@/config/contact';
+import Image from 'next/image';
 
 // Desacticar el server side rendering para las particulas, esto lo refactorice haciando particulas un componente
 // para no desactivar el ssr en todo Hero, que afecta SEO y demas.
@@ -29,8 +29,8 @@ export default function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="logo-hero rounded-full p-4 w-37.5 aspect-square flex justify-center items-center text-[4rem]">
-          <FaRegUser aria-hidden="true" />
+        <div className="logo-hero overflow-hidden relative rounded-full w-37.5 aspect-square flex justify-center items-center text-[4rem]">
+          <Image className="object-cover" src="/face4.png" alt="foto mia" fill sizes="150px" />
         </div>
       </motion.div>
       <div className="flex flex-col justify-center text-center relative z-999">

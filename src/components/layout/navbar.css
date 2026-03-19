@@ -6,6 +6,10 @@
   background-color: var(--bg-hover-theme-btn);
 }
 
+.image-logo {
+  border: 2px solid var(--borders-color);
+}
+
 .logo-text-name {
   color: var(--text-logo-color-primary);
 }
