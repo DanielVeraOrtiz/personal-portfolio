@@ -25,6 +25,27 @@ export default function Contact() {
     }));
   };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error('Error');
+
+      alert('Mensaje enviado');
+    } catch (err) {
+      console.error(err);
+      alert('Error al enviar');
+    }
+  };
+
   const contactData = [
     {
       icon: MdOutlineEmail,
@@ -150,7 +171,7 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <form className="flex flex-col gap-4 h-full">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 h-full">
             {formFields.map((field) => (
               <div key={field.id} className="flex flex-col gap-4">
                 <label htmlFor={field.id} className="font-semibold">
