@@ -52,7 +52,7 @@
   background-color: var(--bg-hover-theme-btn);
 }
 
-@media (width < 414) {
+@media (width < 380) {
   .logo-text-name,
   .logo-text-work {
     display: none;

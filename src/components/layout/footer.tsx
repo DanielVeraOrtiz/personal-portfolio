@@ -36,11 +36,12 @@ export default function Footer() {
               />
               <div>
                 <p className="logo-text-name-footer text-base font-semibold">Daniel Vera</p>
-                <p className="logo-text-work-footer text-xs">Desarrollador Full Stack</p>
+                <p className="logo-text-work-footer text-xs">Desarrollador Fullstack | UC</p>
               </div>
             </div>
             <p className="message-footer text-base">
-              Desarrollador Full Stack apasionado por crear experiencias digitales excepcionales.
+              Desarrollador Fullstack enfocado en aplicaciones web modernas con React, Next.js y
+              Node.js.
             </p>
           </div>
           <nav aria-label="Enlaces del sitio">

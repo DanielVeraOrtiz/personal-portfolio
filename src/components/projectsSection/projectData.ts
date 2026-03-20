@@ -2,7 +2,7 @@ export const projects = [
   {
     name: 'E-Commerce Platform',
     description:
-      'Aplicación web completa de comercio electrónico con catálogo de productos, carrito de compras, autenticación de usuarios y panel de administración.',
+      'Aplicación web completa de comercio electrónico con catálogo de productos, carrito de compras, autenticación de usuarios y panel de administración. Aplicación web completa de comercio electrónico con catálogo de productos, carrito de compras, autenticación de usuarios y panel de administración.Aplicación web completa de comercio electrónico con catálogo de productos, carrito de compras, autenticación de usuarios y panel de administración.Aplicación web completa de comercio electrónico con catálogo de productos, carrito de compras, autenticación de usuarios y panel de administración.',
     toolsUsed: ['Next.js', 'TypeScript', 'TailwindCSS', 'Node.js', 'MongoDB'],
     linkDeploy: 'https://ecommerce-demo.com',
     linkGitHubBackend: 'https://github.com/user/ecommerce-backend',

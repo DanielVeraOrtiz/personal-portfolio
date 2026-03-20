@@ -28,7 +28,7 @@ export default function Skills() {
         viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        Tecnologías y herramientas con las que trabajo para crear soluciones excepcionales
+        Tecnologías y herramientas que utilizo en el desarrollo de aplicaciones web
       </motion.p>
       <div className="flex flex-wrap gap-8 w-full xl:w-3/4 justify-center">
         {skills.map((skill, index) => {
