@@ -75,7 +75,7 @@ npm run dev
 
 ### 📱 Móbil
 
-Cabe destacar que toda la página es responsiva, solo se deja una imagen para no extender demasiado este apartado
+La página es completamente responsiva; se muestra solo una imagen por dispositivo como ejemplo para mantener el README conciso.
 
 ![Hero Sectin on mobile](public/heroMobile.png)
 
