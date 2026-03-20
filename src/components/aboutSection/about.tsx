@@ -47,11 +47,6 @@ export default function About() {
           </p>
           <br />
           <p>
-            Además, realicé mi práctica profesional en análisis de datos y desarrollo de pipelines
-            en Python, donde trabajé en automatización de procesos y manejo de información.
-          </p>
-          <br />
-          <p>
             Me interesa especialmente el desarrollo frontend y la construcción de interfaces claras
             y bien estructuradas, sin dejar de lado la lógica y el diseño de backend, manteniendo
             siempre un enfoque en la calidad del código y la experiencia de usuario.
