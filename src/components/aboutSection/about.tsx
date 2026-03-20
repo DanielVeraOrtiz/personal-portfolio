@@ -22,7 +22,7 @@ export default function About() {
       </motion.h2>
       <div className="flex gap-8 justify-center flex-col md:flex-row">
         <motion.div
-          className="xl:w-5/10 2xl:w-4/10 md:w-6/10 about-description text-lg rounded-[20px] p-8 text-justify leading-normal"
+          className="xl:w-5/10 2xl:w-7/20 md:w-6/10 about-description text-lg rounded-[20px] p-8 text-justify leading-normal"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -47,13 +47,12 @@ export default function About() {
           </p>
           <br />
           <p>
-            Me interesa especialmente el desarrollo frontend y la construcción de interfaces claras
-            y bien estructuradas, sin dejar de lado la lógica y el diseño de backend, manteniendo
-            siempre un enfoque en la calidad del código y la experiencia de usuario.
+            Me interesa el desarrollo frontend, creando interfaces claras y bien estructuradas, sin
+            descuidar la lógica y el backend, siempre con código limpio y enfoque en UX.
           </p>
         </motion.div>
         <motion.div
-          className="xl:w-5/10 2xl:w-4/10 md:w-4/10 flex flex-col gap-8 justify-center"
+          className="xl:w-5/10 2xl:w-7/20 md:w-4/10 flex flex-col gap-8 justify-center"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
