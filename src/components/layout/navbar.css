@@ -2,8 +2,20 @@
   background-color: var(--bg-color-navbar);
 }
 
-.logo {
+.logo:hover {
+  background-color: var(--bg-hover-theme-btn);
+}
+
+.image-logo {
+  border: 2px solid var(--borders-color);
+}
+
+.logo-text-name {
   color: var(--text-logo-color-primary);
+}
+
+.logo-text-work {
+  color: var(--text-logo-color-tertiary);
 }
 
 .logo > span {
@@ -27,11 +39,6 @@
   color: var(--text-btn-color);
 }
 
-.btn-work-together:hover > a {
-  box-shadow: 0 5px 10px 0 var(--boxes-shadow-color-hover-btn);
-  transform: scale(1.05);
-}
-
 .mobile-menu {
   background-color: var(--bg-color-navbar);
   border-bottom: 1px solid var(--borders-color);
@@ -43,4 +50,11 @@
 
 .btn-menu:hover {
   background-color: var(--bg-hover-theme-btn);
+}
+
+@media (width < 414) {
+  .logo-text-name,
+  .logo-text-work {
+    display: none;
+  }
 }

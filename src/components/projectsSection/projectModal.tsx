@@ -7,6 +7,7 @@ import { FaChevronLeft } from 'react-icons/fa';
 import { MdOutlineSmartphone } from 'react-icons/md';
 import { IoTabletPortraitSharp } from 'react-icons/io5';
 import { HiOutlineDesktopComputer } from 'react-icons/hi';
+import { FiGithub } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 
 interface ProjectModalProps {
@@ -192,21 +193,27 @@ export default function ProjectModal({
               <div className="flex flex-wrap gap-4 justify-center text-center font-semibold">
                 <a
                   href={linkDeploy}
-                  className="deploy-link min-w-6/10 py-2.5 block overflow-hidden rounded-xl"
+                  className="deploy-link min-w-6/10 py-2.5 block overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
                 >
                   Ver <i>Deploy</i>
                 </a>
                 <a
                   href={linkGitHubFrontend}
-                  className="github-link flex-1 min-w-4/10 py-2.5 px-5 block overflow-hidden rounded-xl"
+                  className="github-link flex-1 flex items-center justify-center gap-2 min-w-4/10 py-2.5 px-5 overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
                 >
-                  Código <i>Frontend</i>
+                  <FiGithub className="w-5 h-5" />
+                  <span>
+                    Código <i>Frontend</i>
+                  </span>
                 </a>
                 <a
                   href={linkGitHubBackend}
-                  className="github-link flex-1 min-w-4/10 py-2.5 px-5 block overflow-hidden rounded-xl"
+                  className="github-link flex-1 flex items-center justify-center gap-2 min-w-4/10 py-2.5 px-5 overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
                 >
-                  Código <i>Backend</i>
+                  <FiGithub className="w-5 h-5" />
+                  <span>
+                    Código <i>Backend</i>
+                  </span>
                 </a>
               </div>
             </div>

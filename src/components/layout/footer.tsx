@@ -2,6 +2,8 @@ import './footer.css';
 import { FiGithub } from 'react-icons/fi';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
+import { contactLinks } from '@/config/contact';
+import Image from 'next/image';
 
 // Sin framer motion por que va ultimo y con ello sera solo server component.
 export default function Footer() {
@@ -14,9 +16,9 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: FiGithub, href: '#', label: 'GitHub' },
-    { icon: FaLinkedinIn, href: '#', label: 'LinkedIn' },
-    { icon: MdOutlineEmail, href: 'mailto:daniel.vera.or@gmail.com', label: 'Email' },
+    { icon: FiGithub, href: contactLinks.githubLink, label: 'GitHub' },
+    { icon: FaLinkedinIn, href: contactLinks.linkedingLink, label: 'LinkedIn' },
+    { icon: MdOutlineEmail, href: contactLinks.correoAnchor, label: 'Email' },
   ];
 
   return (
@@ -24,11 +26,19 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="logo-footer text-2xl mb-4">
-              <span>{'<'}</span>
-              Portfolio
-              <span>{'/>'}</span>
-            </h3>
+            <div className="w-fit rounded-xl mb-2 py-2 px-1 flex gap-2 logo-footer transition-colors duration-200 ease-in-out">
+              <Image
+                className="rounded-full image-logo-footer"
+                src="/face4.png"
+                alt="foto mia"
+                width={40}
+                height={40}
+              />
+              <div>
+                <p className="logo-text-name-footer text-base font-semibold">Daniel Vera</p>
+                <p className="logo-text-work-footer text-xs">Desarrollador Full Stack</p>
+              </div>
+            </div>
             <p className="message-footer text-base">
               Desarrollador Full Stack apasionado por crear experiencias digitales excepcionales.
             </p>
@@ -55,6 +65,7 @@ export default function Footer() {
                   href={href}
                   aria-label={label}
                   className="w-10 h-10 rounded-full transition-all duration-300 ease-in-out flex items-center justify-center group social-link-footer"
+                  target={label !== 'Email' ? '_blank' : undefined}
                 >
                   <Icon className="w-5 h-5 group-hover:scale-110 transition-transform duration-300 ease-in-out" />
                 </a>
