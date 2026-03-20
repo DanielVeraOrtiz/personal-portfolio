@@ -2,21 +2,22 @@ import { IoCodeSlash } from 'react-icons/io5';
 import { GoDatabase } from 'react-icons/go';
 import { GrTest } from 'react-icons/gr';
 import { AiOutlineDatabase } from 'react-icons/ai';
+import { LiaToolsSolid } from 'react-icons/lia';
 
 export const skills = [
   {
     skillName: 'Desarrollo frontend',
-    skillTech: ['React', 'Next.js', 'Ruby on Rails', 'Typescript'],
+    skillTech: ['React', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
     icon: IoCodeSlash,
   },
   {
     skillName: 'Desarrollo backend',
-    skillTech: ['Ruby on Rails', 'Koa', 'Node', 'Javascript'],
+    skillTech: ['Node.js', 'Koa', 'Express', 'JWT', 'APIs REST'],
     icon: AiOutlineDatabase,
   },
   {
     skillName: 'Bases de datos',
-    skillTech: ['PostgreSQL'],
+    skillTech: ['PostgreSQL', 'Modelamiento de datos', 'Sequelize'],
     icon: GoDatabase,
   },
   {
@@ -24,19 +25,24 @@ export const skills = [
     skillTech: ['Jest', 'Supertest', 'Playwright'],
     icon: GrTest,
   },
+  {
+    skillName: 'Herramientas',
+    skillTech: ['Git', 'GitHub', 'Postman', 'Vercel'],
+    icon: LiaToolsSolid,
+  },
 ];
 
 export const skillTools = [
   {
-    toolName: 'HTML',
-    toolIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
-    toolSkill: 'Avanzado',
-    toolSkillClass: 'advanced',
+    toolName: 'Next.js',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
+    toolSkill: 'Intermedio',
+    toolSkillClass: 'intermediate',
   },
   {
-    toolName: 'JavaScript',
-    toolIcon:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg',
+    toolName: 'React',
+    toolIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
     toolSkill: 'Intermedio',
     toolSkillClass: 'intermediate',
   },
@@ -44,13 +50,6 @@ export const skillTools = [
     toolName: 'Typescript',
     toolIcon:
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
-    toolSkill: 'Básico',
-    toolSkillClass: 'basic',
-  },
-  {
-    toolName: 'Python',
-    toolIcon:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
     toolSkill: 'Intermedio',
     toolSkillClass: 'intermediate',
   },
@@ -62,14 +61,36 @@ export const skillTools = [
     toolSkillClass: 'intermediate',
   },
   {
-    toolName: 'CSS',
-    toolIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+    toolName: 'PostgreSQL',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
     toolSkill: 'Intermedio',
     toolSkillClass: 'intermediate',
   },
   {
-    toolName: 'React',
-    toolIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+    toolName: 'Sequelize',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg',
+    toolSkill: 'Intermedio',
+    toolSkillClass: 'intermediate',
+  },
+  {
+    toolName: 'Jest + Supertest',
+    toolIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
+    toolSkill: 'Intermedio',
+    toolSkillClass: 'intermediate',
+  },
+  {
+    toolName: 'Playwright',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg',
+    toolSkill: 'Básico',
+    toolSkillClass: 'basic',
+  },
+  {
+    toolName: 'Tailwind CSS',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
     toolSkill: 'Intermedio',
     toolSkillClass: 'intermediate',
   },
@@ -87,6 +108,13 @@ export const skillTools = [
     toolSkillClass: 'intermediate',
   },
   {
+    toolName: 'JavaScript',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg',
+    toolSkill: 'Intermedio',
+    toolSkillClass: 'intermediate',
+  },
+  {
     toolName: 'SQL',
     toolIcon:
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg',
@@ -94,23 +122,21 @@ export const skillTools = [
     toolSkillClass: 'intermediate',
   },
   {
-    toolName: 'Next.js',
+    toolName: 'Python',
     toolIcon:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
     toolSkill: 'Intermedio',
     toolSkillClass: 'intermediate',
   },
   {
-    toolName: 'PostgreSQL',
-    toolIcon:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
-    toolSkill: 'Intermedio',
-    toolSkillClass: 'intermediate',
+    toolName: 'HTML',
+    toolIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+    toolSkill: 'Avanzado',
+    toolSkillClass: 'advanced',
   },
   {
-    toolName: 'Tailwind CSS',
-    toolIcon:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+    toolName: 'CSS',
+    toolIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
     toolSkill: 'Intermedio',
     toolSkillClass: 'intermediate',
   },
@@ -125,18 +151,5 @@ export const skillTools = [
     toolIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain.svg',
     toolSkill: 'Intermedio',
     toolSkillClass: 'intermediate',
-  },
-  {
-    toolName: 'Jest + Supertest',
-    toolIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
-    toolSkill: 'Intermedio',
-    toolSkillClass: 'intermediate',
-  },
-  {
-    toolName: 'Playwright',
-    toolIcon:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg',
-    toolSkill: 'básico',
-    toolSkillClass: 'basic',
   },
 ];

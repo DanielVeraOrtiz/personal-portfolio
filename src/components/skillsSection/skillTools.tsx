@@ -7,8 +7,10 @@ import { useState } from 'react';
 import { FaChevronRight } from 'react-icons/fa';
 import { FaChevronLeft } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { useTheme } from '@/app/themeProvider';
 
 export default function SkillTools() {
+  const { theme } = useTheme();
   const [index, setIndex] = useState(0);
 
   const itemsPerPage = 8;
@@ -67,7 +69,7 @@ export default function SkillTools() {
         viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        Mis habilidades desglosadas en diferentes lenguajes y frameworks
+        Desglose de tecnologías y nivel de manejo
       </motion.p>
       <motion.div
         key={index}
@@ -90,7 +92,7 @@ export default function SkillTools() {
             className="skill-tool-container relative flex-1 lg:min-w-1/5 lg:max-w-1/4 md:min-w-1/4 md:max-w-1/3 min-w-9/20 max-w-1/2 rounded-3xl flex flex-col items-center p-8 hover:scale-105 transition-all duration-300 ease-in-out"
           >
             <Image
-              className="skill-tool-icon mb-2"
+              className={`skill-tool-icon mb-2 ${skillTool.toolName === 'GitHub' && theme === 'dark' ? 'invert' : ''}`}
               src={skillTool.toolIcon}
               alt={skillTool.toolName}
               width={80}
