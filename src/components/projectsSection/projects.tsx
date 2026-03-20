@@ -39,7 +39,7 @@ export default function Projects() {
         viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        Todos los proyectos universitarios/personales en los que he trabajado
+        Proyectos personales y académicos desarrollados
       </motion.p>
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full xl:w-3/4 justify-center"

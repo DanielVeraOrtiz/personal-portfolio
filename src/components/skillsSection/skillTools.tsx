@@ -69,7 +69,7 @@ export default function SkillTools() {
         viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        Mis habilidades desglosadas en diferentes lenguajes y frameworks
+        Desglose de tecnologías y nivel de manejo
       </motion.p>
       <motion.div
         key={index}

@@ -49,7 +49,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          Desarrollador Full Stack
+          Desarrollador Fullstack
         </motion.p>
         <motion.p
           className="descriptions-hero-description md:w-[55%] text-lg pt-2 my-0 mx-auto"
@@ -57,8 +57,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          Creando experiencias digitales excepcionales con código limpio y diseño innovador.
-          Apasionado por resolver problemas complejos y construir aplicaciones escalables.
+          Desarrollo aplicaciones web con React, Next.js y Node.js. Enfocado en código mantenible y
+          buenas experiencias de usuario.
         </motion.p>
       </div>
       <motion.a

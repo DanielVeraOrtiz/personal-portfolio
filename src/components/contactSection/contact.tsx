@@ -95,9 +95,9 @@ export default function Contact() {
   ];
 
   const availability = [
-    'Lunes - Viernes: 9:00 - 18:00',
-    'Sábado: 10:00 - 14:00',
-    'Domingo: Cerrado',
+    'Disponible para trabajo full-time',
+    'Modalidad presencial, híbrida o remota',
+    'Incorporación inmediata',
   ];
 
   const formFields = [
@@ -140,7 +140,8 @@ export default function Contact() {
         viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        ¿Tienes un proyecto en mente? No dudes en contactarme
+        Estoy disponible para oportunidades como desarrollador fullstack. Puedes contactarme
+        directamente a través del formulario.
       </motion.p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-16 w-full xl:w-3/4 justify-center">
         <motion.div
@@ -183,9 +184,7 @@ export default function Contact() {
             })}
           </ul>
           <div className="contact-available-container rounded-2xl p-8 flex flex-col gap-4">
-            <h3 className="contact-schedule-title text-xl font-semibold">
-              Horario de Disponibilidad
-            </h3>
+            <h3 className="contact-schedule-title text-xl font-semibold">Disponibilidad</h3>
 
             {availability.map((item, i) => (
               <p key={i} className="contact-available">
@@ -238,7 +237,7 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               className="contact-form-input mb-2 rounded-2xl px-4 py-4 flex-1 resize-none transition-colors duration-300 ease-in-out"
-              placeholder="Cuéntame que necesitas..."
+              placeholder="Cuéntame sobre la oferta o la oportunidad laboral"
               required
               minLength={50}
               maxLength={600}

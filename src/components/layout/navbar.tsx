@@ -52,7 +52,7 @@ export default function Navbar() {
             />
             <div>
               <p className="logo-text-name text-base font-semibold">Daniel Vera</p>
-              <p className="logo-text-work text-xs">Desarrollador Full Stack</p>
+              <p className="logo-text-work text-xs">Desarrollador Fullstack | UC</p>
             </div>
           </a>
         </div>

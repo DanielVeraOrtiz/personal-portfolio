@@ -22,30 +22,43 @@ export default function About() {
       </motion.h2>
       <div className="flex gap-8 justify-center flex-col md:flex-row">
         <motion.div
-          className="xl:w-4/10 2xl:w-3/10 md:w-6/10 about-description text-lg rounded-[20px] p-8 text-justify leading-normal"
+          className="xl:w-5/10 2xl:w-4/10 md:w-6/10 about-description text-lg rounded-[20px] p-8 text-justify leading-normal"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           <p>
-            Soy un desarrollador apasionado con más de X años de experiencia en el desarrollo de
-            aplicaciones web modernas. Me especializo en crear soluciones innovadoras que combinan
-            funcionalidad y diseño excepcional.
+            Soy{' '}
+            <strong className="font-semibold">
+              Ingeniero Industrial TI de la Universidad Católica
+            </strong>{' '}
+            con enfoque en desarrollo de software, actualmente orientado al{' '}
+            <strong className="font-semibold">desarrollo web fullstack</strong>.
           </p>
           <br />
           <p>
-            Mi enfoque se centra en escribir código limpio, escalable y mantenible, siempre buscando
-            las mejores prácticas y las últimas tecnologías del mercado.
+            Durante mi formación y de manera autodidacta, he trabajado en la construcción de
+            aplicaciones utilizando{' '}
+            <strong className="font-semibold">React, Next.js y Node.js</strong>, desarrollando tanto
+            frontend como backend. He implementado autenticación con JWT, manejo de APIs,
+            modelamiento de bases de datos y testing automatizado a nivel unitario, de integración y
+            end-to-end.
           </p>
           <br />
           <p>
-            Cuando no estoy programando, me encontrarás aprendiendo nuevas tecnologías,
-            contribuyendo a proyectos open source o compartiendo conocimientos con la comunidad.
+            Además, realicé mi práctica profesional en análisis de datos y desarrollo de pipelines
+            en Python, donde trabajé en automatización de procesos y manejo de información.
+          </p>
+          <br />
+          <p>
+            Me interesa especialmente el desarrollo frontend y la construcción de interfaces claras
+            y bien estructuradas, sin dejar de lado la lógica y el diseño de backend, manteniendo
+            siempre un enfoque en la calidad del código y la experiencia de usuario.
           </p>
         </motion.div>
         <motion.div
-          className="xl:w-4/10 2xl:w-3/10 md:w-4/10 flex flex-col gap-8 justify-center"
+          className="xl:w-5/10 2xl:w-4/10 md:w-4/10 flex flex-col gap-8 justify-center"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -65,8 +78,8 @@ export default function About() {
           </div>
           <div className="about-container-data">
             <p className="flex items-center gap-2">
-              Motivación por Aprender y Trabajar
-              <strong className="ml-auto text-[1.875rem] font-medium">∞</strong>
+              Tecnologías Trabajadas
+              <strong className="ml-auto text-[1.875rem] font-medium">8+</strong>
             </p>
           </div>
         </motion.div>
