@@ -38,7 +38,7 @@ export default function Navbar() {
       transition={{ duration: 0.3, ease: 'easeOut' }}
     >
       <div className="px-8 flex justify-between items-center backdrop-blur-md h-full">
-        <div className="w-5/10 lg:w-3/10">
+        <div className="w-7/10 lg:w-3/10">
           <a
             href="#"
             className="w-fit rounded-xl py-2 px-1 flex gap-2 logo hover:cursor-pointer transition-colors duration-200 ease-in-out"
@@ -75,7 +75,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden lg:flex w-5/10 lg:w-3/10 btn-work-together gap-2 items-center justify-end">
+        <div className="hidden lg:flex w-3/10 lg:w-3/10 btn-work-together gap-2 items-center justify-end">
           <ButtonTheme />
           {/* Ojo que motion es inline css, entonces sus scale sobrescribiran mis scale por ejemplo */}
           <motion.a

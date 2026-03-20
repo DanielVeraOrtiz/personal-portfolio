@@ -58,3 +58,25 @@ npm run dev
 ```
 
 ## 🖼️ Imágenes
+
+### 🖥️ Computador
+
+![Hero Section](public/hero.png)
+
+![About Section](public/about.png)
+
+![Skill Section](public/skill.png)
+
+![Skill Section broken down by tool](public/skillTools.png)
+
+![Contact section](public/contact.png)
+
+![Hero Section light theme](public/heroLight.png)
+
+### 📱 Móbil
+
+Cabe destacar que toda la página es responsiva, solo se deja una imagen para no extender demasiado este apartado
+
+![Hero Sectin on mobile](public/heroMobile.png)
+
+![Hero Sectin on tablet](public/heroTablet.png)
