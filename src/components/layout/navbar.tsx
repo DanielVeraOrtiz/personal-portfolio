@@ -49,6 +49,7 @@ export default function Navbar() {
               alt="foto mia"
               width={40}
               height={40}
+              loading="eager"
             />
             <div>
               <p className="logo-text-name text-base font-semibold">Daniel Vera</p>

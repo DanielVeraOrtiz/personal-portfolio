@@ -41,6 +41,8 @@ export default function ProjectModal({
   const [current, setCurrent] = useState(0);
   const [images, setImages] = useState(imagesComputer);
 
+  console.log('hola', window.innerWidth);
+
   useEffect(() => {
     if (open) {
       modalRef.current?.focus();
@@ -76,7 +78,7 @@ export default function ProjectModal({
           }}
         >
           <motion.div
-            className="modal-container rounded-2xl 2xl:max-w-8/10 max-w-150 mx-2 flex flex-col 2xl:flex-row relative max-h-[80vh] translate-y-[5vh]"
+            className="modal-container rounded-2xl xl:max-w-full 2xl:max-w-8/10 max-w-150 mx-2 xl:mx-8 2xl:mx-2 flex flex-col xl:flex-row relative max-h-[80vh] translate-y-[5vh] xl:translate-y-0"
             onClick={(e) => e.stopPropagation()}
             initial={{ opacity: 0.75, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

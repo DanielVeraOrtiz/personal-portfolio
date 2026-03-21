@@ -120,7 +120,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full 2xl:py-16 py-26 px-4 lg:px-8 justify-center items-center flex flex-col"
+      className="w-full 2xl:py-16 py-26 px-4 lg:px-8 justify-center items-center flex flex-col overflow-hidden"
       aria-labelledby="contact-title"
     >
       <motion.h2
