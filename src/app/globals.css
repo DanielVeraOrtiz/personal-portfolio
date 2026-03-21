@@ -80,8 +80,8 @@
   /* ================= GRADIENTS / EFFECTS ================= */
 
   --bg-btns-primary: linear-gradient(45deg, #da2f2f, #a0020d);
-  --bg-border-hero-logo: linear-gradient(45deg, #f55f5f, #f51624);
-  --bg-gradient-titles: linear-gradient(45deg, #f55f5f, #f51624);
+  --bg-border-hero-logo: linear-gradient(45deg, #da2f2f, #a0020d);
+  --bg-gradient-titles: linear-gradient(45deg, #d64c4c, #cc000e);
   --bg-particles-hero: radial-gradient(
     circle,
     rgba(255, 120, 0, 0.2) 0%,

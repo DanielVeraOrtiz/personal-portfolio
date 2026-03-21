@@ -58,9 +58,18 @@ export default function ProjectModal({
   };
 
   const changeResolution = (type: string) => {
-    if (type === 'pc' && images !== imagesComputer) setImages(imagesComputer);
-    if (type === 'phone' && images !== imagesPhone) setImages(imagesPhone);
-    if (type === 'tablet' && images !== imagesTablet) setImages(imagesTablet);
+    if (type === 'pc' && images !== imagesComputer) {
+      setImages(imagesComputer);
+      setCurrent(0);
+    }
+    if (type === 'phone' && images !== imagesPhone) {
+      setImages(imagesPhone);
+      setCurrent(0);
+    }
+    if (type === 'tablet' && images !== imagesTablet) {
+      setImages(imagesTablet);
+      setCurrent(0);
+    }
   };
 
   return (
@@ -192,32 +201,36 @@ export default function ProjectModal({
                   ))}
                 </div>
               </div>
-              <div className="flex flex-wrap gap-4 justify-center text-center font-semibold">
-                <a
-                  href={linkDeploy}
-                  className="deploy-link min-w-6/10 py-2.5 block overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
-                >
-                  Ver <i>Deploy</i>
-                </a>
-                <a
-                  href={linkGitHubFrontend}
-                  className="github-link flex-1 flex items-center justify-center gap-2 min-w-4/10 py-2.5 px-5 overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
-                >
-                  <FiGithub className="w-5 h-5" />
-                  <span>
-                    Código <i>Frontend</i>
-                  </span>
-                </a>
-                <a
-                  href={linkGitHubBackend}
-                  className="github-link flex-1 flex items-center justify-center gap-2 min-w-4/10 py-2.5 px-5 overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
-                >
-                  <FiGithub className="w-5 h-5" />
-                  <span>
-                    Código <i>Backend</i>
-                  </span>
-                </a>
-              </div>
+              {linkDeploy !== 'No disponible' ? (
+                <div className="flex flex-wrap gap-4 justify-center text-center font-semibold">
+                  <a
+                    href={linkDeploy}
+                    className="deploy-link min-w-6/10 py-2.5 block overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
+                  >
+                    Ver <i>Deploy</i>
+                  </a>
+                  <a
+                    href={linkGitHubFrontend}
+                    className="github-link flex-1 flex items-center justify-center gap-2 min-w-4/10 py-2.5 px-5 overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
+                  >
+                    <FiGithub className="w-5 h-5" />
+                    <span>
+                      Código <i>Frontend</i>
+                    </span>
+                  </a>
+                  <a
+                    href={linkGitHubBackend}
+                    className="github-link flex-1 flex items-center justify-center gap-2 min-w-4/10 py-2.5 px-5 overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
+                  >
+                    <FiGithub className="w-5 h-5" />
+                    <span>
+                      Código <i>Backend</i>
+                    </span>
+                  </a>
+                </div>
+              ) : (
+                <></>
+              )}
             </div>
           </motion.div>
         </div>
