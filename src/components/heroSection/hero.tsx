@@ -31,7 +31,14 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
       >
         <div className="logo-hero overflow-hidden relative rounded-full w-37.5 aspect-square flex justify-center items-center text-[4rem]">
-          <Image className="object-cover" src="/face4.png" alt="foto mia" fill sizes="150px" />
+          <Image
+            className="object-cover"
+            loading="eager"
+            src="/face4.png"
+            alt="foto mia"
+            fill
+            sizes="150px"
+          />
         </div>
       </motion.div>
       <div className="flex flex-col justify-center text-center relative z-999">
