@@ -21,6 +21,16 @@
   color: var(--text-color-base-text-secondary);
 }
 
+.display-webkit-box {
+  display: -webkit-box;
+}
+.webkit-box-orient-vertical {
+  -webkit-box-orient: vertical;
+}
+.webkit-line-clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
 .card-tag-tool {
   background-color: var(--bg-skill-tag-advanced);
   border: 1px solid var(--border-skill-tag-advanced);
