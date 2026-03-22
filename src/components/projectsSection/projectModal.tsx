@@ -9,6 +9,8 @@ import { IoTabletPortraitSharp } from 'react-icons/io5';
 import { HiOutlineDesktopComputer } from 'react-icons/hi';
 import { FiGithub } from 'react-icons/fi';
 import { motion } from 'framer-motion';
+import { IoIosResize } from 'react-icons/io';
+import Image from 'next/image';
 
 interface ProjectModalProps {
   open: boolean;
@@ -40,8 +42,7 @@ export default function ProjectModal({
   const modalRef = useRef<HTMLDivElement>(null);
   const [current, setCurrent] = useState(0);
   const [images, setImages] = useState(imagesComputer);
-
-  console.log('hola', window.innerWidth);
+  const [zoomedImage, setZoomedImage] = useState<boolean>(false);
 
   useEffect(() => {
     if (open) {
@@ -87,13 +88,13 @@ export default function ProjectModal({
           }}
         >
           <motion.div
-            className="modal-container rounded-2xl xl:max-w-full 2xl:max-w-8/10 max-w-150 mx-2 xl:mx-8 2xl:mx-2 flex flex-col xl:flex-row relative max-h-[80vh] translate-y-[5vh] xl:translate-y-0"
+            className={`modal-container ${zoomedImage ? 'aspect-video 2xl:translate-y-[2vh]' : ' xl:translate-y-0'} translate-y-[5vh] rounded-2xl xl:max-w-full 2xl:max-w-8/10 max-w-150 mx-2 xl:mx-8 2xl:mx-2 flex flex-col xl:flex-row relative max-h-[80dvh]`}
             onClick={(e) => e.stopPropagation()}
             initial={{ opacity: 0.75, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="carrusel flex-3 relative">
+            <div className="carrusel flex-3 relative rounded-tl-2xl rounded-bl-2xl">
               <div className="other-resolution absolute w-60 -top-24 right-1/2 translate-x-1/2 flex flex-col gap-2 text-2xl">
                 <h3 className="other-resolution-title text-center text-xl font-semibold transition-opacity duration-300 ease-in-out">
                   Vista por dispositivo
@@ -137,6 +138,27 @@ export default function ProjectModal({
                   </button>
                 </div>
               </div>
+              <div className="absolute right-0 text-2xl -top-14 z-50 hidden xl:block">
+                <button
+                  className="expand-btn group p-2 rounded-full transition-all duration-300 ease-in-out"
+                  onClick={() => setZoomedImage((prev) => !prev)}
+                  aria-label={
+                    zoomedImage
+                      ? 'Reducir el tamaño del carrusel'
+                      : 'Ampliar el tamaño del carrusel'
+                  }
+                  title={
+                    zoomedImage
+                      ? 'Reducir el tamaño del carrusel'
+                      : 'Ampliar el tamaño del carrusel'
+                  }
+                >
+                  <IoIosResize
+                    className="group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                    aria-hidden="true"
+                  />
+                </button>
+              </div>
               <div className="overflow-x-hidden aspect-video">
                 <div
                   className="flex transition-transform duration-500 ease-in-out h-full"
@@ -147,14 +169,14 @@ export default function ProjectModal({
                       key={i}
                       src={img}
                       alt={`Image ${i + 1} from project called ${name}`}
-                      className="w-full h-full object-contain bg-black shrink-0 rounded-tl-2xl rounded-bl-2xl"
+                      className={` ${zoomedImage ? 'rounded-2xl' : 'rounded-tl-2xl rounded-tr-2xl xl:rounded-tr-none xl:rounded-bl-2xl'} w-full h-full object-contain modal-image shrink-0`}
                     />
                   ))}
                 </div>
               </div>
               <div className="flex absolute top-1/2 justify-between w-full items-center px-4">
                 <button
-                  aria-label="Previous image"
+                  aria-label="Imagen previa"
                   onClick={prev}
                   className="carrusel-btn-change p-4 rounded-full cursor-pointer -translate-y-1/2 hover:scale-105 transition-all duration-300 ease-in-out"
                 >
@@ -162,7 +184,7 @@ export default function ProjectModal({
                 </button>
 
                 <button
-                  aria-label="Next image"
+                  aria-label="Imagen siguiente"
                   onClick={next}
                   className="carrusel-btn-change p-4 rounded-full cursor-pointer -translate-y-1/2 hover:scale-105 transition-all duration-300 ease-in-out"
                 >
@@ -185,7 +207,9 @@ export default function ProjectModal({
                 })}
               </div>
             </div>
-            <div className="flex-2 p-8 justify-between flex flex-col gap-4 max-h-[50vh] lg:max-h-screen overflow-y-scroll xl:overflow-y-hidden">
+            <div
+              className={`${zoomedImage ? 'hidden' : 'flex-2'} p-8 justify-between flex flex-col gap-4 max-h-[50vh] lg:max-h-screen overflow-y-scroll xl:overflow-y-hidden`}
+            >
               <div className="flex flex-col gap-4 text-justify">
                 <h3 className="modal-title text-3xl font-semibold text-transparent">{name}</h3>
                 <p className="modal-description text-lg">{description}</p>

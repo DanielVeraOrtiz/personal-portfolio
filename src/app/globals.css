@@ -57,6 +57,7 @@
   --bg-skill-index-deactivated: #b8b6b6;
 
   --bg-modal-backdrop: rgba(0, 0, 0, 0.8);
+  --bg-modal-img: black;
   --bg-btn-github: #1a1a1a;
 
   --bg-footer: #111111;
@@ -154,6 +155,7 @@
   --bg-skill-index-deactivated: #cfc7c7;
 
   --bg-modal-backdrop: rgba(0, 0, 0, 0.75);
+  --bg-modal-img: black;
   --bg-btn-github: #010409;
 
   --bg-footer: #500000;
