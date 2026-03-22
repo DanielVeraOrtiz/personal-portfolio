@@ -121,3 +121,7 @@
 .image-index-deactivated {
   background-color: var(--bg-skill-index-deactivated);
 }
+
+.text-project-university {
+  color: var(--text-color-base-text-secondary);
+}

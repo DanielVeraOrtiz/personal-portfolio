@@ -44,6 +44,11 @@ export default function ProjectModal({
   const [images, setImages] = useState(imagesComputer);
   const [zoomedImage, setZoomedImage] = useState<boolean>(false);
 
+  const hasLinks =
+    linkDeploy !== 'No disponible' ||
+    linkGitHubFrontend !== 'No disponible' ||
+    linkGitHubBackend !== 'No disponible';
+
   useEffect(() => {
     if (open) {
       modalRef.current?.focus();
@@ -225,36 +230,52 @@ export default function ProjectModal({
                   ))}
                 </div>
               </div>
-              {linkDeploy !== 'No disponible' ? (
-                <div className="flex flex-wrap gap-4 justify-center text-center font-semibold">
+              <div className="flex flex-wrap gap-4 justify-center text-center font-semibold">
+                {!hasLinks && (
+                  <p className="text-sm font-normal text-project-university">
+                    Código y demo no disponibles por tratarse de un proyecto académico colaborativo.
+                  </p>
+                )}
+                {linkDeploy !== 'No disponible' ? (
                   <a
                     href={linkDeploy}
                     className="deploy-link min-w-6/10 py-2.5 block overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
+                    target="_blank"
                   >
                     Ver <i>Deploy</i>
                   </a>
+                ) : (
+                  <></>
+                )}
+                {linkGitHubFrontend !== 'No disponible' ? (
                   <a
                     href={linkGitHubFrontend}
                     className="github-link flex-1 flex items-center justify-center gap-2 min-w-4/10 py-2.5 px-5 overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
+                    target="_blank"
                   >
                     <FiGithub className="w-5 h-5" />
                     <span>
                       Código <i>Frontend</i>
                     </span>
                   </a>
+                ) : (
+                  <></>
+                )}
+                {linkGitHubBackend !== 'No disponible' ? (
                   <a
                     href={linkGitHubBackend}
                     className="github-link flex-1 flex items-center justify-center gap-2 min-w-4/10 py-2.5 px-5 overflow-hidden rounded-xl transition-all duration-400 ease-in-out"
+                    target="_blank"
                   >
                     <FiGithub className="w-5 h-5" />
                     <span>
                       Código <i>Backend</i>
                     </span>
                   </a>
-                </div>
-              ) : (
-                <></>
-              )}
+                ) : (
+                  <></>
+                )}
+              </div>
             </div>
           </motion.div>
         </div>

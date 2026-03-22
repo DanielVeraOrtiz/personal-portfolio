@@ -4,6 +4,24 @@
   outline: 2px solid var(--outline-focus);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-scrollbar-container);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-scrollbar);
+  border-radius: 10px;
+  border: 2px solid var(--borders-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-scrollbar-hover);
+}
+
 :root {
   --background: rgba(10, 10, 10);
   --foreground: #ededed;
@@ -42,6 +60,9 @@
 
   --bg-color-navbar: rgba(10, 10, 10, 0.75);
   --bg-btn-theme: #111111;
+  --bg-scrollbar-container: #111111;
+  --bg-scrollbar: #707070;
+  --bg-scrollbar-hover: #555555;
 
   --bg-containers: #111111;
   --bg-hover-theme-btn: #222222;
@@ -141,6 +162,9 @@
   --bg-color-navbar: #500000;
   --bg-btn-theme: #610000;
   --bg-hover-github-links: #151b23;
+  --bg-scrollbar-container: #111111;
+  --bg-scrollbar: #707070;
+  --bg-scrollbar-hover: #555555;
 
   --bg-containers: #f0f0f0;
   --bg-hover-theme-btn: #360000;
