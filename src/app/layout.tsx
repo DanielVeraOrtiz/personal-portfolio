@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 // Propio de next para los archivos en head
 export const metadata: Metadata = {
   title: 'Portafolio DV',
-  description: 'Portafolio para trabajados de Daniel Vera (Desarrollador full-stack)',
+  description: 'Portafolio para trabajos web de Daniel Vera (Desarrollador full-stack)',
 };
 
 export default function RootLayout({
