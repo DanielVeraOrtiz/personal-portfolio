@@ -61,22 +61,26 @@ npm run dev
 
 ### 🖥️ Computador
 
-![Hero Section](public/hero.png)
+![Hero Section](public/Mipagina/computer/hero.png)
 
-![About Section](public/about.png)
+![About Section](public/Mipagina/computer/about.png)
 
-![Skill Section](public/skill.png)
+![Skill Section](public/Mipagina/computer/skill.png)
 
-![Skill Section broken down by tool](public/skillTools.png)
+![Skill Section broken down by tool](public/Mipagina/computer/skillTools.png)
 
-![Contact section](public/contact.png)
+![Project Section](public/Mipagina/computer/project.png)
 
-![Hero Section light theme](public/heroLight.png)
+![Project Modal](public/Mipagina/computer/projectmodal.png)
+
+![Contact section](public/Mipagina/computer/contact.png)
+
+![Hero Section light theme](public/Mipagina/computer/herolight.png)
 
 ### 📱 Móbil
 
 La página es completamente responsiva; se muestra solo una imagen por dispositivo como ejemplo para mantener el README conciso.
 
-![Hero Sectin on mobile](public/heroMobile.png)
+![Hero Sectin on mobile](public/Mipagina/mobil/hero.png)
 
-![Hero Sectin on tablet](public/heroTablet.png)
+![Hero Sectin on tablet](public/Mipagina/tablet/hero.png)
