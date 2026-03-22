@@ -82,9 +82,11 @@ export default function ProjectCard({
             <h3 className="card-title text-xl mb-2 transition-colors duration-300 ease-in-out">
               {name}
             </h3>
-            <p className="card-subtitle mb-4">{description}</p>
+            <p className="card-subtitle mb-4 overflow-hidden text-ellipsis display-webkit-box webkit-box-orient-vertical webkit-line-clamp-3">
+              {description}
+            </p>
             <div className="flex gap-2 flex-wrap">
-              {toolsUsed.map((tool, index) => (
+              {toolsUsed.slice(0, 6).map((tool, index) => (
                 <p
                   key={`${index}-${tool}`}
                   className="card-tag-tool rounded-full px-4 py-1 text-sm"
@@ -92,6 +94,11 @@ export default function ProjectCard({
                   {tool}
                 </p>
               ))}
+              {toolsUsed[6] && (
+                <p key="Mas tools" className="card-tag-tool rounded-full px-4 py-1 text-sm">
+                  +{toolsUsed.length - 1}
+                </p>
+              )}
             </div>
           </div>
         </article>

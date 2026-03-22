@@ -4,6 +4,24 @@
   outline: 2px solid var(--outline-focus);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-scrollbar-container);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-scrollbar);
+  border-radius: 10px;
+  border: 2px solid var(--borders-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-scrollbar-hover);
+}
+
 :root {
   --background: rgba(10, 10, 10);
   --foreground: #ededed;
@@ -42,6 +60,9 @@
 
   --bg-color-navbar: rgba(10, 10, 10, 0.75);
   --bg-btn-theme: #111111;
+  --bg-scrollbar-container: #111111;
+  --bg-scrollbar: #707070;
+  --bg-scrollbar-hover: #555555;
 
   --bg-containers: #111111;
   --bg-hover-theme-btn: #222222;
@@ -57,6 +78,7 @@
   --bg-skill-index-deactivated: #b8b6b6;
 
   --bg-modal-backdrop: rgba(0, 0, 0, 0.8);
+  --bg-modal-img: black;
   --bg-btn-github: #1a1a1a;
 
   --bg-footer: #111111;
@@ -80,8 +102,8 @@
   /* ================= GRADIENTS / EFFECTS ================= */
 
   --bg-btns-primary: linear-gradient(45deg, #da2f2f, #a0020d);
-  --bg-border-hero-logo: linear-gradient(45deg, #f55f5f, #f51624);
-  --bg-gradient-titles: linear-gradient(45deg, #f55f5f, #f51624);
+  --bg-border-hero-logo: linear-gradient(45deg, #da2f2f, #a0020d);
+  --bg-gradient-titles: linear-gradient(45deg, #d64c4c, #cc000e);
   --bg-particles-hero: radial-gradient(
     circle,
     rgba(255, 120, 0, 0.2) 0%,
@@ -140,6 +162,9 @@
   --bg-color-navbar: #500000;
   --bg-btn-theme: #610000;
   --bg-hover-github-links: #151b23;
+  --bg-scrollbar-container: #111111;
+  --bg-scrollbar: #707070;
+  --bg-scrollbar-hover: #555555;
 
   --bg-containers: #f0f0f0;
   --bg-hover-theme-btn: #360000;
@@ -154,6 +179,7 @@
   --bg-skill-index-deactivated: #cfc7c7;
 
   --bg-modal-backdrop: rgba(0, 0, 0, 0.75);
+  --bg-modal-img: black;
   --bg-btn-github: #010409;
 
   --bg-footer: #500000;
