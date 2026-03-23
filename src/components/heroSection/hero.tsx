@@ -56,7 +56,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          Desarrollador Fullstack
+          Desarrollador Fullstack | UC
         </motion.p>
         <motion.p
           className="descriptions-hero-description md:w-[55%] text-lg pt-2 my-0 mx-auto"

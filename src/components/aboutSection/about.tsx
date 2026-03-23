@@ -67,7 +67,7 @@ export default function About() {
           <div className="about-container-data">
             <p className="flex items-center gap-2">
               Proyectos Personales / Universitarios Realizados
-              <strong className="ml-auto text-[1.875rem] font-medium">5</strong>
+              <strong className="ml-auto text-[1.875rem] font-medium">4</strong>
             </p>
           </div>
           <div className="about-container-data">
