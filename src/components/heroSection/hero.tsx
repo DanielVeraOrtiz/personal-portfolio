@@ -70,7 +70,7 @@ export default function Hero() {
       </div>
       <motion.a
         className="btn-cv relative z-999 py-2.5 px-5 rounded-xl flex gap-1 items-center my-4"
-        href="/face.png"
+        href="/Daniel_Vera_CV.pdf"
         download
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 0.8, duration: 0.8 } }}

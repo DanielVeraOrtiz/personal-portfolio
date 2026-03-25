@@ -81,6 +81,13 @@ export const skillTools = [
     toolSkillClass: 'intermediate',
   },
   {
+    toolName: 'Vitejs',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg',
+    toolSkill: 'Intermedio',
+    toolSkillClass: 'intermediate',
+  },
+  {
     toolName: 'Playwright',
     toolIcon:
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg',
