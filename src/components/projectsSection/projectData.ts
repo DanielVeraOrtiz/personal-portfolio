@@ -47,6 +47,7 @@ export const projects = [
       'Proyecto web personal de juegos con autenticación JWT, backend propio y gestión de favoritos, incluyendo testing automatizado (unitario, integración y E2E) y diseño responsivo.',
     toolsUsed: [
       'React',
+      'Vitejs',
       'Javascript',
       'Jest',
       'Supertest',
@@ -56,7 +57,7 @@ export const projects = [
       'Sequelize',
       'Koa',
     ],
-    linkDeploy: 'No disponible',
+    linkDeploy: 'https://classic-games-page.vercel.app',
     linkGitHubBackend: 'https://github.com/DanielVeraOrtiz/classic_games_page_backend',
     linkGitHubFrontend: 'https://github.com/DanielVeraOrtiz/classic_games_page',
     imagesComputer: [
@@ -95,6 +96,7 @@ export const projects = [
       'Proyecto universitario en equipo de 5 personas para Mascotalerta, enfocado en la gestión de animales perdidos, robados y encontrados, junto con hogares temporales. Incluye autenticación, roles y un sistema de IA para detectar similitudes entre reportes.',
     toolsUsed: [
       'React',
+      'Vitejs',
       'JavaScript',
       'Node.js',
       'PostgreSQL',
@@ -146,7 +148,16 @@ export const projects = [
     name: 'JDP Calendario',
     description:
       'Proyecto web universitario entre 3 personas tipo calendario para gestionar tareas y metas, con autenticación JWT, CRUD completo y seguimiento de progreso mediante una interfaz clara y moderna.',
-    toolsUsed: ['React', 'JavaScript', 'Node.js', 'PostgreSQL', 'Sequelize', 'Koa', 'Bootstrap'],
+    toolsUsed: [
+      'React',
+      'Vitejs',
+      'JavaScript',
+      'Node.js',
+      'PostgreSQL',
+      'Sequelize',
+      'Koa',
+      'Bootstrap',
+    ],
     linkDeploy: 'No disponible',
     linkGitHubBackend: 'No disponible',
     linkGitHubFrontend: 'No disponible',
