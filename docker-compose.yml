@@ -1,0 +1,65 @@
+# =============================================================================
+# ENTORNO DE DESARROLLO — mismo comportamiento que `npm run dev` en el host
+# =============================================================================
+# Qué hace este archivo:
+#   Levanta un contenedor que ejecuta Next en modo desarrollo (Turbopack/webpack
+#   según tu versión de Next), con recarga en caliente al guardar archivos.
+#
+# Cómo usarlo:
+#   docker compose up --build
+#   Si tu instalación es antigua y solo tienes el binario clásico:
+#   docker-compose up --build
+#
+# Variables de entorno (correo, etc.):
+#   Al montar `.:/app`, Next lee automáticamente `.env.local` y `.env` desde tu
+#   disco (igual que si corrieras `npm run dev` sin Docker). No hace falta
+#   duplicarlas aquí salvo que quieras sobreescribirlas explícitamente.
+# =============================================================================
+
+services:
+  # Nombre del servicio: puedes hacer `docker compose logs -f dev`, etc.
+  dev:
+    build:
+      # context: carpeta que se envía al daemon como "contexto de build"
+      # (respeta .dockerignore: no se suben node_modules del host ni secretos).
+      context: .
+      # Dockerfile separado: imagen liviana que solo prepara dependencias;
+      # el código fuente entra por volumen, no por capas de esta imagen.
+      dockerfile: Dockerfile.dev
+
+    volumes:
+      # Bind mount del proyecto: lo que editas en tu editor es lo que ve el
+      # proceso `next dev` dentro del contenedor → hot reload.
+      - .:/app
+
+      # Volumen nombrado para node_modules: evita usar el node_modules del host
+      # (puede estar vacío, incompleto o compilado para otro sistema operativo).
+      # La primera vez se rellena con lo que instaló `npm ci` en la imagen.
+      - dev_node_modules:/app/node_modules
+
+      # Volumen para .next de desarrollo: caché de compilación incremental de Next.
+      # Evita conflictos con un .next del host y acelera reinicios del contenedor.
+      - dev_next:/app/.next
+
+    ports:
+      # host:contenedor — abre http://localhost:3000 en tu máquina.
+      - "3000:3000"
+
+    environment:
+      # Modo explícito de desarrollo (comportamiento de librerías y mensajes).
+      NODE_ENV: development
+
+      # Sin telemetría de Next (coherente con Dockerfile.dev / Dockerfile).
+      NEXT_TELEMETRY_DISABLED: "1"
+
+      # En Docker Desktop / WSL / algunos FS compartidos, los eventos "inotify"
+      # no llegan bien al contenedor; forzar polling hace que Next detecte
+      # cambios de archivos aunque sea un poco más costoso en CPU.
+      WATCHPACK_POLLING: "true"
+
+# Volúmenes declarados explícitamente para que Compose los cree y reutilice
+# entre `down` y `up` (los datos en dev_next / dev_node_modules persisten hasta
+# que hagas `docker compose down -v` para borrarlos a propósito).
+volumes:
+  dev_node_modules:
+  dev_next:
