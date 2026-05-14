@@ -37,6 +37,11 @@ yarn-error.log*
 # documentadas para Compose producción y para copiar a .env / .env.local).
 !.env.example
 
+
+# Archivos docker con comentarios
+Dockerfile.dev.comments
+docker-compose.comments.yml
+
 # vercel
 .vercel
 

@@ -36,3 +36,7 @@ npm-debug.log*
 
 # Archivo típico de macOS; irrelevante en Linux/containers.
 .DS_Store
+
+# Archivos docker con comentarios
+Dockerfile.dev.comments
+docker-compose.comments.yml
