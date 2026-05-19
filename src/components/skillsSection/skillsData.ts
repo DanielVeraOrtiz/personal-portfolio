@@ -27,7 +27,7 @@ export const skills = [
   },
   {
     skillName: 'Herramientas',
-    skillTech: ['Git', 'GitHub', 'Postman', 'Vercel'],
+    skillTech: ['Git', 'GitHub', 'Docker', 'Postman', 'Vercel'],
     icon: LiaToolsSolid,
   },
 ];
@@ -61,6 +61,13 @@ export const skillTools = [
     toolSkillClass: 'intermediate',
   },
   {
+    toolName: 'Express',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
+    toolSkill: 'Intermedio',
+    toolSkillClass: 'intermediate',
+  },
+  {
     toolName: 'PostgreSQL',
     toolIcon:
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
@@ -71,6 +78,13 @@ export const skillTools = [
     toolName: 'Sequelize',
     toolIcon:
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg',
+    toolSkill: 'Intermedio',
+    toolSkillClass: 'intermediate',
+  },
+  {
+    toolName: 'Docker',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
     toolSkill: 'Intermedio',
     toolSkillClass: 'intermediate',
   },

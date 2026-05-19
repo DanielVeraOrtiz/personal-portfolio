@@ -30,8 +30,20 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# Archivos de entorno: suelen contener secretos (correo, API keys). Todo .env*
+# queda fuera de Git salvo la plantilla versionada para Docker / onboarding.
 .env*
+# Excepción: permitir commitear SOLO la plantilla sin valores reales (variables
+# documentadas para Compose producción y para copiar a .env / .env.local).
+!.env.example
+
+
+# Archivos docker con comentarios
+Dockerfile.dev.comments
+docker-compose.comments.yml
+Dockerfile.comments
+Dockerfile.comments.v2
+docker-compose.prod.comments.yml
 
 # vercel
 .vercel

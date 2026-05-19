@@ -1,0 +1,31 @@
+services:
+  dev:
+    image: personal-portfolio:dev
+
+    build:
+      # context respecto a todo el proyecto
+      context: .
+      dockerfile: Dockerfile.dev
+
+    volumes:
+      # Bind mount del proyecto.
+      - .:/app
+
+      # Volumen nombrado para evitar node_modules del sistema anfitrion (mi compu)
+      - dev_node_modules:/app/node_modules
+
+      - dev_next:/app/.next
+
+    ports:
+      - "3000:3000"
+
+    environment:
+      NODE_ENV: development
+
+      NEXT_TELEMETRY_DISABLED: "1"
+
+      WATCHPACK_POLLING: "true"
+
+volumes:
+  dev_node_modules:
+  dev_next:
