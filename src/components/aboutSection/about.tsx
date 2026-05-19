@@ -42,7 +42,7 @@ export default function About() {
             aplicaciones utilizando{' '}
             <strong className="font-semibold">React, Next.js y Node.js</strong>, desarrollando tanto
             frontend como backend. He implementado autenticación con JWT, manejo de APIs,
-            modelamiento de bases de datos y testing automatizado a nivel unitario, de integración y
+            modelamiento de bases de datos, Dockerización y testing automatizado a nivel unitario, de integración y
             end-to-end.
           </p>
           <br />

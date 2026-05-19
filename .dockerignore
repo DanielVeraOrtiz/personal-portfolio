@@ -1,0 +1,45 @@
+# =============================================================================
+# .dockerignore — qué NO enviar como "contexto" al daemon al hacer `docker build`
+# =============================================================================
+# Cada línea es un patrón (similar a .gitignore). Efectos principales:
+#   - Builds más rápidos y menos datos por la red al daemon.
+#   - Evitas copiar secretos (.env) dentro de capas de imagen por accidente.
+#   - Fuerzas a instalar node_modules DENTRO de la imagen (reproducible).
+#
+# Nota: `!.env.example` re-incluye ese archivo aunque `.env.*` lo ignoraría;
+#       así puedes tener una plantilla versionada sin meterla en la imagen si
+#       no hace falta (aquí solo afecta al contexto; el COPY del Dockerfile
+#       sigue respetando qué archivos copias explícitamente).
+# =============================================================================
+
+# Carpeta de dependencias del host: nunca debe mezclarse con la del contenedor.
+node_modules
+
+# Artefactos de build de Next en tu máquina: podrían desalinear versiones o
+# mezclar caches de otro SO; la imagen debe generar .next con `next build`.
+.next
+out
+
+# Metadatos de control de versiones e IDE: no aportan al runtime de la app.
+.git
+.gitignore
+.cursor
+
+# Archivos de entorno: pueden contener contraseñas; no deben formar parte del contexto.
+.env
+.env.*
+# Excepción: permitir la plantilla de ejemplo en el contexto si algún paso la necesitara.
+!.env.example
+
+# Logs de npm que no deben influir en invalidación de caché ni copiarse al builder.
+npm-debug.log*
+
+# Archivo típico de macOS; irrelevante en Linux/containers.
+.DS_Store
+
+# Archivos docker con comentarios
+Dockerfile.dev.comments
+docker-compose.comments.yml
+Dockerfile.comments
+Dockerfile.comments.v2
+docker-compose.prod.comments.yml

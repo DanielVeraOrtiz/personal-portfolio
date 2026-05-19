@@ -92,7 +92,7 @@ export default function SkillTools() {
             className="skill-tool-container relative flex-1 lg:min-w-1/5 lg:max-w-1/4 md:min-w-1/4 md:max-w-1/3 min-w-9/20 max-w-1/2 rounded-3xl flex flex-col items-center p-8 hover:scale-105 transition-all duration-300 ease-in-out"
           >
             <Image
-              className={`skill-tool-icon mb-2 ${skillTool.toolName === 'GitHub' && theme === 'dark' ? 'invert' : ''}`}
+              className={`skill-tool-icon mb-2 ${(skillTool.toolName === 'GitHub' || skillTool.toolName === 'Express') && theme === 'dark' ? 'invert' : ''}`}
               src={skillTool.toolIcon}
               alt={skillTool.toolName}
               width={80}

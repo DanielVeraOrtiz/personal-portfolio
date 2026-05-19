@@ -3,7 +3,7 @@ export const projects = [
     name: 'Mi Portafolio',
     description:
       'Portafolio web personal desarrollado con Next.js para presentar proyectos y habilidades, con diseño responsivo, animaciones y enfoque en experiencia de usuario.',
-    toolsUsed: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer motion'],
+    toolsUsed: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer motion', 'Docker'],
     linkDeploy: 'https://personal-portfolio-vera-daniel.vercel.app/#projects',
     linkGitHubBackend: 'No disponible',
     linkGitHubFrontend: 'https://github.com/DanielVeraOrtiz/personal-portfolio',

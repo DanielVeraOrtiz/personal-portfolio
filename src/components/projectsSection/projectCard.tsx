@@ -2,10 +2,11 @@
 
 import './projectCard.css';
 import { useState, useCallback } from 'react';
-// Me ayuda a montar el modal directamente en el div
+// Me ayuda a montar el modal directamente en el body
 import { createPortal } from 'react-dom';
 import ProjectModal from './projectModal';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   name: string;
@@ -71,11 +72,12 @@ export default function ProjectCard({
         transition={{ duration: 0.8 }}
       >
         <article className="flex flex-col h-full justify-start">
-          <div className="w-full aspect-video overflow-hidden group-hover:brightness-40 transition-all duration-300 ease-in-out">
-            <img
-              className="w-full aspect-video object-cover rounded-tl-2xl rounded-tr-2xl group-hover:scale-110 transition-transform duration-300 ease-in-out"
+          <div className="w-full relative aspect-video overflow-hidden group-hover:brightness-40 transition-all duration-300 ease-in-out">
+            <Image
               src={imagesComputer[0]}
               alt={`Images from project called ${name}`}
+              fill
+              className="object-cover rounded-tl-2xl rounded-tr-2xl group-hover:scale-110 transition-transform duration-300 ease-in-out"
             />
           </div>
           <div className="p-6 pt-4">
