@@ -31,24 +31,37 @@ export default function About() {
           <p>
             Soy{' '}
             <strong className="font-semibold">
-              Ingeniero Industrial TI de la Universidad Católica
+              Ingeniero Civil de Industrias con Diploma en Tecnologías de Información de la
+              Pontificia Universidad Católica de Chile
             </strong>{' '}
-            con enfoque en desarrollo de software, actualmente orientado al{' '}
-            <strong className="font-semibold">desarrollo web fullstack</strong>.
+            con enfoque en desarrollo de software y actualmente orientado al{' '}
+            <strong className="font-semibold">desarrollo web full stack</strong>.
           </p>
+
           <br />
+
           <p>
-            Durante mi formación y de manera autodidacta, he trabajado en la construcción de
-            aplicaciones utilizando{' '}
-            <strong className="font-semibold">React, Next.js y Node.js</strong>, desarrollando tanto
-            frontend como backend. He implementado autenticación con JWT, manejo de APIs,
-            modelamiento de bases de datos, Dockerización y testing automatizado a nivel unitario, de integración y
-            end-to-end.
+            Durante mi formación y de manera autodidacta, he desarrollado aplicaciones web
+            utilizando{' '}
+            <strong className="font-semibold">React, Next.js, Node.js y PostgreSQL</strong>,
+            participando tanto en frontend como backend. He trabajado con autenticación JWT, diseño
+            de APIs REST, modelamiento de bases de datos relacionales, Dockerización, testing
+            automatizado y despliegue de aplicaciones en entornos VPS.
           </p>
+
           <br />
+
           <p>
-            Me interesa el desarrollo frontend, creando interfaces claras y bien estructuradas, sin
-            descuidar la lógica y el backend, siempre con código limpio y enfoque en UX.
+            También he implementado pipelines de{' '}
+            <strong className="font-semibold">CI/CD con GitHub Actions</strong>, automatizando
+            procesos de testing, build y deployment utilizando Docker y Docker Compose.
+          </p>
+
+          <br />
+
+          <p>
+            Me interesa desarrollar aplicaciones mantenibles y bien estructuradas, combinando
+            experiencia de usuario, buenas prácticas de desarrollo y automatización de despliegues.
           </p>
         </motion.div>
         <motion.div
@@ -60,8 +73,8 @@ export default function About() {
         >
           <div className="about-container-data">
             <p className="flex items-center gap-2">
-              Años de Experiencia Laboral
-              <strong className="ml-auto text-[1.875rem] font-medium">0</strong>
+              Motivación por Aportar y Aprender
+              <strong className="ml-auto text-[1.875rem] font-medium">∞</strong>
             </p>
           </div>
           <div className="about-container-data">
