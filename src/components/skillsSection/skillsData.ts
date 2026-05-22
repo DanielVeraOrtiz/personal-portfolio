@@ -3,6 +3,7 @@ import { GoDatabase } from 'react-icons/go';
 import { GrTest } from 'react-icons/gr';
 import { AiOutlineDatabase } from 'react-icons/ai';
 import { LiaToolsSolid } from 'react-icons/lia';
+import { AiOutlineCloudServer } from 'react-icons/ai';
 
 export const skills = [
   {
@@ -26,8 +27,13 @@ export const skills = [
     icon: GrTest,
   },
   {
+    skillName: 'DevOps e infraestructura',
+    skillTech: ['Docker', 'Docker Compose', 'GitHub Actions', 'CI/CD', 'VPS Deployment'],
+    icon: AiOutlineCloudServer,
+  },
+  {
     skillName: 'Herramientas',
-    skillTech: ['Git', 'GitHub', 'Docker', 'Postman', 'Vercel'],
+    skillTech: ['Git', 'GitHub', 'Postman', 'Vercel'],
     icon: LiaToolsSolid,
   },
 ];
@@ -87,6 +93,13 @@ export const skillTools = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
     toolSkill: 'Intermedio',
     toolSkillClass: 'intermediate',
+  },
+  {
+    toolName: 'GitHub Actions',
+    toolIcon:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg',
+    toolSkill: 'Básico',
+    toolSkillClass: 'basic',
   },
   {
     toolName: 'Jest + Supertest',
